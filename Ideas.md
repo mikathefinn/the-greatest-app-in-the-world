@@ -2,19 +2,16 @@
 
 ## Let's list any ideas we have here.
 
-- car charging/heating remote control
-
-  - parking reservation included maybe. guest, temporary etc.
-
 - remotely switch on/off things
 
   - sauna
   - oven
   - plug sockets
+  - blinds
+  -
 
-- reservation system for following things
-  - parking
-  - sauna
-  - you name it. Lets add more, if this is the one we choose
+### Version 2 if good on time
 
--web site connects housing companies, cleaning companies and services, as well as people who want to clean their house individually
+- Include car charging/heating remote control
+
+- parking reservation included. guest, temporary etc.
