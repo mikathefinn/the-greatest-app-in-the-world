@@ -4,3 +4,61 @@ html {
 body {
   font-size: 1.6rem;
 }
+.toggle {
+  position: relative;
+  display: inline-block;
+}
+
+.toggle-checkbox {
+  display: none;
+}
+
+.toggle-slot {
+  position: relative;
+  display: flex; /* Use flex display for proper alignment */
+  align-items: center; /* Align items vertically */
+  height: 3.5rem;
+  width: 6rem;
+  border: 0px solid transparent;
+  border-radius: 10rem;
+  background-color: #bed6ff;
+  transition: background-color 250ms;
+  padding-left: 1rem;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot {
+  background-color: #d0ff5d;
+}
+
+.toggle-button {
+  transform: translate(0.3rem, 0rem);
+  position: absolute;
+  top: 0.25rem;
+  left: 0rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: #1b1464;
+  box-shadow: inset 0px 0px 0px 0.605em #1b1464;
+  transition: background-color 500ms 250ms, border-color 250ms,
+    transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
+  background-color: #d0ff5d;
+  box-shadow: inset 0px 0px 0px 1rem #1b1464;
+  transform: translate(3.75rem, 0rem);
+}
+
+/* Transition for text */
+.toggle-text {
+  display: none;
+  color: #1b1464;
+  padding-inline-start: -0.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.toggle-checkbox:checked ~ .toggle-slot .toggle-text {
+  display: block;
+}
