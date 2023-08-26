@@ -4,36 +4,89 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
+  color: rgba(18, 18, 18, 0.885);
+  background-color: #364155;
 }
 .wrapper {
   background-image: url(images/remote-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+/************** HEADER & NAVBAR/BURGER MEMU ***********/
 header {
   display: flex;
   flex-direction: column;
+  margin-block-end: 3rem;
 }
 .logo {
+  padding: 2rem 1rem 1rem 1rem;
   display: flex;
+  margin-block-end: 2rem;
 }
 #logo {
+  width: 40%;
+  height: auto;
 }
 nav {
 }
 .navlinks {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+.navlinks > li {
+  background-color: #dddcdcbd;
+  padding: 0.4rem 5rem;
+  margin-block-end: 1rem;
+  border-radius: 1rem;
 }
 .navlinks > li > a {
   text-decoration: none;
+  color: black;
+  letter-spacing: 0.2rem;
+}
+
+/************* MAIN *********/
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .headings {
+  margin-block-end: 4rem;
 }
 h1 {
+  font-size: 4rem;
+  margin-block-end: 3rem;
 }
+.switchpanel {
+  margin-block-end: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h2 {
+  font-size: 3.2rem;
+  margin-block-end: 2rem;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
 }
 .address {
+  padding-inline-start: 2rem;
 }
+.social-media {
+  padding: 2rem;
+}
+.social-media > a {
+  padding-inline-end: 1rem;
+}
+
+/***********TOGGLE STYLES**************/
 .toggle {
   position: relative;
   display: inline-block;
