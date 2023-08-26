@@ -3,6 +3,36 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+  background-image: url(images/remote-bg.jpg);
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+.logo {
+  display: flex;
+}
+#logo {
+}
+nav {
+}
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+}
+.navlinks > li > a {
+  text-decoration: none;
+}
+.headings {
+}
+h1 {
+}
+h2 {
+}
+.address {
 }
 .toggle {
   position: relative;
