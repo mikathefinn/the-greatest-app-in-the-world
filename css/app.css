@@ -8,11 +8,8 @@ body {
   background-color: #364155;
 }
 
-/************** HEADER & NAVBAR/BURGER MEMU ***********/
-header {
-  display: flex;
-  flex-direction: column;
-}
+/************** NAVBAR/BURGER MEMU ***********/
+
 .menu {
   padding: 0.25rem 0.5rem;
   display: flex;
@@ -114,17 +111,19 @@ nav a:focus {
   max-width: 25rem;
   height: auto;
 }
-
+/************* SWITCH PAGE *************/
 /************* MAIN *********/
 .wrapper {
-  background-image: url(images/remote-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: grid;
-  grid-template-rows: auto 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
 }
-main {
+.switch-header {
+  display: flex;
+  flex-direction: column;
+}
+.switch-main {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -143,12 +142,9 @@ h1 {
   align-items: center;
 }
 
-h2 {
+.switch-h2 {
   font-size: 3.2rem;
   margin-block-end: 2rem;
-}
-.onoff {
-  color: #000000;
 }
 footer {
   color: black;
