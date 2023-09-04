@@ -1,28 +1,54 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    background-image: url(../images/empty-living-room-with-blue-sofa-plants-table-empty-white-wall-background-3d-rendering_41470-1778.avif);
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size:cover;
- 
+body {
+  background-image: url(../images/tiago-fioreze-Lxq5czND8tU-unsplash.jpg);
+  background-position: center;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;  
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 header {
-    color: white;
-    background-color:#D9D9D9;
+  color: white;
+  background-color: #bed6fe;
+  width: 100%;
+  padding-left: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9vh;
 }
-.menu{
-    padding: 0.25rem 0.5rem;
+header nav {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+header nav a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: #2e368f;
+  /* BED6FF
+ D0FF5D*/
+}
+header img {
+  width: 5rem;
+}
+
+/*.menu{
+    
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -60,11 +86,12 @@ header {
 
 }
 :is(header:hover,header:focus-within) .icon::before{
-    transform: translateX(-20px) rotate(45deg);
+   /* transform: translateX(-20px) rotate(45deg);*/
+/* display: none;
     
 }
 :is(header:hover,header:focus-within) .icon::after{
-    transform: translateX(-20px) rotate(-45deg);    
+   display: none;   
 }
 :is(header:hover,header:focus-within) nav{
      display: block;
@@ -92,7 +119,10 @@ nav ul{
     flex-direction: column;
     flex-wrap: nowrap;
     font-size: x-large;
-
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 70%;
 }
 nav li{
     padding: 0.5;
@@ -113,96 +143,91 @@ nav a:any-link{
 nav a:hover,nav a:focus{
     transform: scale(1.2);
     transition: all 0.3s;
+}*/
+.main {
+  background: rgb(225 225 225 / 36%);
+  color: white;
+  border-radius: 10px;
+  padding: 30px 40px;
 }
-.main{
-  
-    background:transparent;
-    color: white;
-    border-radius: 10px;
-    padding: 30px 40px;
-  
+.main h1 {
+  font-size: 36px;
+  text-align: center;
 }
-.main h1{
-    font-size: 36px;
-    text-align: center;
-}
-.main .box{
-    width: 100%;
-    height: 50px;
-   position: relative;
-    margin: 30px 0;   
+.main .box {
+  width: 100%;
+  height: 50px;
+  position: relative;
+  margin: 30px 0;
 }
 
-.box input{
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgba(225,225,225, 1);
-    border-radius: 40px;
-    background: transparent;
-    outline: none;
-    font-size: 16px;
-    color: white;
-   padding-left: 20px;   
+.box input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(225, 225, 225, 1);
+  border-radius: 40px;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  color: white;
+  padding-left: 20px;
 }
-.box input::placeholder{
-    color:white;
+.box input::placeholder {
+  color: white;
 }
-.box i{
+.box i {
   position: absolute;
-  right: 20px;
-  top:50%;
+  right: 10px;
+  top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
 }
-.main .rememberME{
-    display: flex;
-    justify-content: space-between;
-    margin: -15px 0 15px;
+.main .rememberME {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 0 15px;
+  gap: 1rem;
 }
-.rememberME label input{
-    accent-color:#fff;
-    margin-right: 3px;
+.rememberME label input {
+  accent-color: #fff;
+  margin-right: 3px;
 }
-.rememberME a{
-    color: #fff;
-    text-decoration: none;
+.rememberME a {
+  color: #fff;
+  text-decoration: none;
 }
-.rememberME a:hover{
-    text-decoration: underline;
+.rememberME a:hover {
+  text-decoration: underline;
 }
-.main .submit{
-    width: 100%;
-    height: 45px;
-    background-color: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(225,225,225, 0.1);
-    font-size: 16px;
-    color: #333;
-    font-weight: 600;
+.main .submit {
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(225, 225, 225, 0.1);
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
 }
-.main .register{
-    font-size: 14px;
-    text-align: center;
-    margin:20px 0 15px;
+.main .register {
+  font-size: 14px;
+  text-align: center;
+  margin: 20px 0 15px;
 }
-.register p a{
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
+.register p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
 }
-.register p a:hover{
-    text-decoration: underline;
+.register p a:hover {
+  text-decoration: underline;
 }
-footer{
-    text-align: center;
-    background-color: #D9D9D9;
+footer {
+  text-align: center;
+  background-color: #bed6fe;
+  height: 7vh;
+  padding-top: 0.5rem;
+  color: #2e368f;
 }
-
-
-
-
-
-
-
