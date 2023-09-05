@@ -5,7 +5,6 @@ body {
   font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(196, 196, 196, 0.885);
-  background-color: #364155;
 }
 
 /************** NAVBAR ***********/
@@ -37,6 +36,27 @@ header {
   color: #2e368f;
 }
 
+/************* APP PAGE ***********/
+/************* MAIN **************/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.grid-item {
+  border: 0.1rem solid #ddd;
+  border-radius: 0.8rem;
+  padding: 2rem;
+  text-align: center;
+  background-color: #87ddfa50;
+}
+
+.grid-image {
+  max-width: 100%; /* Make images responsive within their containers */
+}
 /************* SWITCH PAGE *************/
 /************* MAIN *********/
 .wrapper {
@@ -44,6 +64,11 @@ header {
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  background-image: url(../images/tiago-fioreze-Lxq5czND8tU-unsplash.jpg);
+  background-position: center;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .switch-header {
   display: flex;
