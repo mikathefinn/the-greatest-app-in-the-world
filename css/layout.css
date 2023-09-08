@@ -231,3 +231,156 @@ footer {
   padding-top: 0.5rem;
   color: #2e368f;
 }
+/* about us page */
+.aboutUs {
+  background-image: none;
+  background-color: #bed6fe;
+  padding: 0.5rem;
+  
+}
+.firstSection figure img,
+.secondSection figure img {
+  width: 100%;
+  height: auto;
+}
+.firstSection{
+  position: relative;
+  overflow: hidden;
+}
+.firstSection .firstDiv {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(225, 225, 225, 0.4);
+  padding: 0.2rem 0.5rem;
+  width: 80%;
+  min-height: 60%;
+  color:#2e368f;
+  border:rgba(225, 225, 225, 0.4) solid 1px ;
+  border-radius: 5px;
+  font-size: larger;
+}
+.secondSection .secondDiv .ul{
+  display: flex;
+  flex-grow: row nowrap;
+  justify-content: space-between;
+  padding: 0.5rem;
+  color: #2e368f;
+}
+.secondSection .secondDiv .ul ul{
+  list-style-type: none;
+  line-height: 2rem;
+  font-size: larger;
+}
+.firstDiv h1,
+.secondDiv h1 {
+  border-bottom: #2e368f solid 1px;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+  color: #2e368f;
+}
+.firstDiv p{
+  padding-top: 0.5rem;
+}
+@media only screen and (min-width: 426px){
+  .secondSection{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+  }
+  .secondSection figure{
+    flex-basis: 50%;
+  }
+  .ul{
+    flex-direction: column;
+  }
+  .firstSection .firstDiv {
+    min-height:30%;
+  }
+}
+@media only screen and (min-width: 768px){
+  .secondSection{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+  }
+  .secondSection figure{
+    flex-basis: 50%;
+  }
+  .ul{
+    flex-direction:row;
+    gap:7rem;
+  }
+  .firstSection .firstDiv {
+    min-height:30%;
+  }
+}
+/* another layout for the about page 
+.firstSection ,.secondSection {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 0.5rem;
+
+}
+.firstDiv,
+figure {
+  flex-basis: 50%;
+}
+.secondSection .secondDiv{
+  order: 1;
+}
+.firstSection .firstDiv p,.secondSection .secondDiv .ul {line-height: 1.5rem;
+  padding-top: 0.5rem;
+}
+.firstSection .firstDiv ,.secondSection .secondDiv{
+  background-color: #bed6fe;
+  padding: 0.5rem;
+
+}
+@media only screen and (min-width: 426px) {
+
+.firstSection {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+.firstDiv{
+  align-self: center;
+}
+.firstDiv,
+figure {
+  flex-basis: 50%;
+}
+.secondSection {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+.secondDiv,
+.secondSection figure {
+  flex-basis: 50%; 
+}
+.secondSection .secondDiv{
+  order: 0;
+  text-align: center;
+  align-self: center;
+}
+}
+.firstDiv,
+.secondDiv {
+  flex-basis: 50%;
+  font-size: large;
+  color: #2e368f;
+}
+.secondDiv .ul ul{
+  list-style-type: none;
+}
+.firstDiv h1,
+.secondDiv h1 {
+  border-bottom: #2e368f solid 1px;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}*/
