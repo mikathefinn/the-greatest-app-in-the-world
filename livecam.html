@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Livecam feed</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/livecam.css" />
+  </head>
+  <body>
+    <h2>Living room</h2>
+    <figure class="cam_feed">
+      <img
+        src="/images/depositphotos_57218421-stock-video-home-security-camera-feed.jpg"
+        alt="Cam feed"
+      />
+    </figure>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">All</button>
+      <button class="btn" onclick="filterSelection('living_room')">
+        Living Room
+      </button>
+      <button class="btn" onclick="filterSelection('bedroom1')">
+        Bedroom 1
+      </button>
+      <button class="btn" onclick="filterSelection('bedroom2')">
+        Bedroom 2
+      </button>
+      <button class="btn" onclick="filterSelection('kitchen')">Kitchen</button>
+      <button class="btn" onclick="filterSelection('hallway')">Hallway</button>
+    </div>
+
+    <div class="container">
+      <div class="filterDiv living_room">Living Room socket 1</div>
+      <div class="filterDiv bedroom1">Bedroom 1 socket 1</div>
+      <div class="filterDiv living_room">Living Room socket 2</div>
+      <div class="filterDiv bedroom1">Bedroom 1 socket 2</div>
+      <div class="filterDiv living_room">Living Room socket 3</div>
+      <div class="filterDiv bedroom1">Bedroom 1 socket 3</div>
+      <div class="filterDiv bedroom2">Bedroom 2 socket 1</div>
+      <div class="filterDiv bedroom2">Bedroom 2 socket 2</div>
+      <div class="filterDiv kitchen">Kitchen socket 1</div>
+      <div class="filterDiv kitchen">Kitchen Dishwasher</div>
+      <div class="filterDiv kitchen">Dish washer</div>
+      <div class="filterDiv kitchen">Kitchen socket 2</div>
+      <div class="filterDiv bedroom2">Bedroom 2 socket 3</div>
+    </div>
+    <script src="scripts/livecam.js"></script>
+  </body>
+</html>
