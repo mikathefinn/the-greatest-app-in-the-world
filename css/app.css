@@ -9,14 +9,17 @@ body {
 
 /************** NAVBAR ***********/
 header {
+  position: fixed;
+  top: 0;
+  width: 100%;
   color: white;
   background-color: #bed6fe;
-  width: 100%;
+
   padding-left: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 9vh;
+  height: 7rem;
 }
 .header-logo {
   max-width: 10rem;
@@ -60,13 +63,14 @@ header {
 /************* SWITCH PAGE *************/
 /************* MAIN *********/
 .wrapper {
+  padding-top: 7rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
   background-image: url(../images/tiago-fioreze-Lxq5czND8tU-unsplash.jpg);
   background-position: center;
-  height: 100%;
+
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -77,14 +81,11 @@ header {
 .switch-main {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.headings {
-  margin-block-end: 4rem;
 }
 h1 {
   font-size: 4rem;
+  align-self: center;
+  margin-bottom: 3rem;
 }
 .switchpanel {
   margin-block-end: 3rem;
@@ -98,6 +99,7 @@ h1 {
   margin-block-end: 2rem;
 }
 footer {
+  position: relative;
   color: black;
   display: flex;
   justify-content: space-between;
