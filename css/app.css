@@ -108,6 +108,8 @@ body {
 .box-2 > label {
   flex: 0;
 }
+
+/**/
 /*
 .switchpanel {
   margin-block-end: 3rem;
