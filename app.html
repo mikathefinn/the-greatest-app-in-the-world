@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <script
+    src="https://kit.fontawesome.com/ebfd1f2c4c.js"
+    crossorigin="anonymous"
+  ></script>
+
     <title>Remo home page</title>
   </head>
   <body>
@@ -18,7 +23,8 @@
       </nav>
     </header>
     <div class="wrapper">
-      <main class="app-main">
+
+      <section class="rooms">
         <section class="grid-container">
           <div class="grid-item">
             <img class="grid-image" src="images/air-conditioning.png" alt="" />
@@ -107,18 +113,38 @@
           <div class="grid-item">
             <img class="grid-image" src="images/parking.png" alt="" />
             <p>placeholder</p>
-            <label class="toggle">
-              <input class="toggle-checkbox" type="checkbox" />
-              <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
-                <div class="toggle-button"></div>
-              </div>
-            </label>
           </div>
-        </section>
+        </section> 
       </main>
 
       <footer>
+        <section class="small-screen">
+        <nav class="mobile-bottom-nav">
+          <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
+            <div class="mobile-bottom-nav__item-content">
+              <i class="fa-solid fa-house style="color: #144eb3;"></i>
+            </div>		
+          </div>
+          <div class="mobile-bottom-nav__item">		
+            <div class="mobile-bottom-nav__item-content">
+              <i class="fa-solid fa-user style="color: #144eb3;"></i>
+            </div>
+          </div>
+          <div class="mobile-bottom-nav__item">
+            <div class="mobile-bottom-nav__item-content">
+              <i class="fa-solid fa-envelope style="color: #144eb3;"></i>
+            </div>		
+          </div>
+          
+          <div class="mobile-bottom-nav__item">
+            <div class="mobile-bottom-nav__item-content">
+              <i class="fa-solid fa-gear style="color: #144eb3;"></i>
+            </div>		
+          </div>
+        </nav> 
+      </section>
+
+        <section class="widescreen">
         <div class="address">
           <p>Remo Inc.</p>
           <p>1 Hacker Way</p>
@@ -137,7 +163,9 @@
             ><i class="fa-brands fa-instagram" style="color: #dddcdc"></i
           ></a>
         </div>
+      </section>
       </footer>
     </div>
+    <script src="scripts/app.js"></script>
   </body>
 </html>
