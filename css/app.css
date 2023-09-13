@@ -4,39 +4,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgba(196, 196, 196, 0.885);
-}
-
-/************** NAVBAR ***********/
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  color: white;
-  background-color: #bed6fe;
-
-  padding-left: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 7rem;
-}
-.header-logo {
-  max-width: 10rem;
-}
-
-.app-navbar {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-}
-.app-navbar a {
-  font-size: 1.6rem;
-  text-decoration: none;
-  font-weight: 600;
-  color: #2e368f;
+  color: rgba(32, 31, 31, 0.885);
 }
 
 /************* APP PAGE ***********/
@@ -50,61 +18,113 @@ header {
 }
 
 .grid-item {
-  border: 0.1rem solid #ddd;
   border-radius: 0.8rem;
   padding: 2rem;
-  text-align: center;
-  background-color: #87ddfa50;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+#switch-all {
+  grid-column: span 2;
 }
 
-.grid-image {
-  max-width: 100%; /* Make images responsive within their containers */
-}
 /************* SWITCH PAGE *************/
 /************* MAIN *********/
 .wrapper {
-  padding-top: 7rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   min-height: 100vh;
-  background-image: url(../images/tiago-fioreze-Lxq5czND8tU-unsplash.jpg);
-  background-position: center;
+  background-color: #f7f7f7;
+}
 
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .switch-header {
+  padding: 1.8rem 2rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #004d41;
 }
+
+.switch-header > h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.2rem;
+  align-self: center;
+}
+
 .switch-main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
-h1 {
-  font-size: 4rem;
-  align-self: center;
-  margin-bottom: 3rem;
+.heading-image {
+  margin-bottom: 1rem;
 }
+#usage {
+  display: flex;
+  justify-content: center;
+}
+#usage > p {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+#counter {
+  font-size: 2.2rem;
+  color: #ffb632;
+}
+/************* Style the grid items  *************/
+.fa-plug {
+  padding-right: 2rem;
+}
+.box-title {
+  letter-spacing: 0.2rem;
+}
+
+.rooms .toggle-button {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.rooms .toggle-slot {
+  height: 2.5rem;
+}
+.rooms .grid-item:last-child {
+  display: flex;
+  flex-direction: column;
+}
+.box-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.box-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.box-2 > label {
+  flex: 0;
+}
+
+/**/
+/*
 .switchpanel {
   margin-block-end: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.heading-image {
+  padding: 2rem;
+}
 
 .switch-h2 {
   font-size: 3.2rem;
   margin-block-end: 2rem;
 }
-footer {
-  position: relative;
-  color: black;
-  display: flex;
-  justify-content: space-between;
-  margin-block-end: 3rem;
-}
+
 .address {
   padding-inline-start: 2rem;
 }
@@ -114,11 +134,11 @@ footer {
 .social-media > a {
   padding-inline-end: 1rem;
 }
-
+ */
 /***********ON/OFF SWITCH**************/
 .toggle {
-  position: relative;
-  display: inline-block;
+  flex: 1 0 100%;
+  padding-top: 2rem;
 }
 
 .toggle-checkbox {
@@ -133,13 +153,13 @@ footer {
   width: 6rem;
   border: 0px solid transparent;
   border-radius: 10rem;
-  background-color: #bed6ff;
+  background-color: #5db371;
   transition: background-color 250ms;
   padding-left: 1rem;
 }
 
 .toggle-checkbox:checked ~ .toggle-slot {
-  background-color: #d0ff5d;
+  background-color: #ffb632;
 }
 
 .toggle-button {
@@ -150,14 +170,14 @@ footer {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  background-color: #1b1464;
-  box-shadow: inset 0px 0px 0px 0.605em #1b1464;
+  background-color: #4169e1;
+  box-shadow: inset 0px 0px 0px 0.605em #4169e1;
   transition: background-color 500ms 250ms, border-color 250ms,
     transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
 }
 
 .toggle-checkbox:checked ~ .toggle-slot .toggle-button {
-  background-color: #d0ff5d;
+  background-color: #ffb632;
   box-shadow: inset 0px 0px 0px 1rem #1b1464;
   transform: translate(3.75rem, 0rem);
 }
@@ -172,4 +192,35 @@ footer {
 
 .toggle-checkbox:checked ~ .toggle-slot .toggle-text {
   display: block;
+}
+
+/************ BOTTOM MENU *****************/
+
+.mobile-bottom-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  will-change: transform;
+  transform: translateZ(0);
+  display: flex;
+  height: 5rem;
+  box-shadow: 0 -2px 5px -2px #333;
+  background-color: #004d41;
+}
+.mobile-bottom-nav__item {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mobile-bottom-nav__item--active {
+  color: #ffb632;
+}
+.mobile-bottom-nav__item-content {
+  display: flex;
+  flex-direction: column;
 }
