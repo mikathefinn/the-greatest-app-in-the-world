@@ -10,7 +10,7 @@ body {
 header {
   width: 100%;
   color: white;
-  background-color: #bed6fe;
+  background-color: #004d41;
 
   padding-left: 0.5rem;
   display: flex;
@@ -50,11 +50,12 @@ header {
   border-radius: 0.8rem;
   padding: 2rem;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   background-color: white;
 }
 .grid-image {
-  max-width: 100%;
+  max-width: 80%;
 }
 #switch-all {
   grid-column: span 2;
@@ -67,6 +68,7 @@ header {
   flex-direction: column;
   min-height: 100vh;
   background-color: #f7f7f7;
+  margin-bottom: 7rem;
 }
 
 .switch-header {
@@ -150,6 +152,7 @@ header {
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 7rem;
   z-index: 1000;
 }
 /*
