@@ -48,16 +48,66 @@ body {
 
 .switch-header > h1 {
   font-size: 2.8rem;
+  letter-spacing: 0.2rem;
   align-self: center;
 }
 
 .switch-main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+.heading-image {
+  margin-bottom: 1rem;
+}
+#usage {
+  display: flex;
+  justify-content: center;
+}
+#usage > p {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+#counter {
+  font-size: 2.2rem;
+  color: orangered;
+}
+/************* Style the grid items  *************/
+.fa-plug {
+  padding-right: 2rem;
+}
+.box-title {
+  letter-spacing: 0.2rem;
 }
 
-/************* Style the grid items  *************/
+.rooms .toggle-button {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.rooms .toggle-slot {
+  height: 2.5rem;
+}
+.rooms .grid-item:last-child {
+  display: flex;
+  flex-direction: column;
+}
+.box-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
+.box-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.box-2 > label {
+  flex: 0;
+}
 /*
 .switchpanel {
   margin-block-end: 3rem;
@@ -87,6 +137,7 @@ body {
 /***********ON/OFF SWITCH**************/
 .toggle {
   flex: 1 0 100%;
+  padding-top: 2rem;
 }
 
 .toggle-checkbox {
