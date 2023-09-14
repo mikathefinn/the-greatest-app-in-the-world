@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  background-image: url(../images/tiago-fioreze-Lxq5czND8tU-unsplash.jpg);
+  background-color: #F7F7F7;
   background-position: center;
   height: 100%;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ main {
 }
 header {
   color: white;
-  background-color: #bed6fe;
+  background-color: #004d40;
   width: 100%;
   padding-left: 0.5rem;
   display: flex;
@@ -39,7 +39,7 @@ header nav a {
   font-size: 1.1rem;
   text-decoration: none;
   font-weight: 600;
-  color: #2e368f;
+  color: white;
   /* BED6FF
  D0FF5D*/
 }
@@ -47,8 +47,8 @@ header img {
   width: 5rem;
 }
 .main {
-  background: rgb(225 225 225 / 36%);
-  color: white;
+  background:white;
+  color: black;
   border-radius: 10px;
   padding: 30px 40px;
 }
@@ -75,7 +75,7 @@ header img {
   padding-left: 20px;
 }
 .box input::placeholder {
-  color: white;
+  color:gray;
 }
 .box i {
   position: absolute;
@@ -95,7 +95,7 @@ header img {
   margin-right: 3px;
 }
 .rememberME a {
-  color: #fff;
+  color:black;
   text-decoration: none;
 }
 .rememberME a:hover {
@@ -105,7 +105,7 @@ header img {
   width: 100%;
   height: 45px;
   background-color: #fff;
-  border: none;
+  border: 2px solid rgba(225, 225, 225, 1);
   outline: none;
   border-radius: 40px;
   box-shadow: 0 0 10px rgba(225, 225, 225, 0.1);
@@ -128,15 +128,15 @@ header img {
 }
 footer {
   text-align: center;
-  background-color: #bed6fe;
+  background-color:#004d40;
   height: 7vh;
   padding-top: 0.5rem;
-  color: #2e368f;
+  color:white;
 }
 /* about us page */
 .aboutUs {
   background-image: none;
-  background-color: #bed6fe;
+  background-color: #F7F7F7;
   padding: 0.5rem;
   
 }
@@ -158,7 +158,7 @@ footer {
   padding: 0.2rem 0.5rem;
   width: 80%;
   min-height: 60%;
-  color:#2e368f;
+  color:black;
   border:rgba(225, 225, 225, 0.4) solid 1px ;
   border-radius: 5px;
   font-size: larger;
@@ -168,7 +168,7 @@ footer {
   flex-grow: row nowrap;
   justify-content: space-between;
   padding: 0.5rem;
-  color: #2e368f;
+  color: black;
 }
 .secondSection .secondDiv .ul ul{
   list-style-type: none;
@@ -177,10 +177,10 @@ footer {
 }
 .firstDiv h1,
 .secondDiv h1 {
-  border-bottom: #2e368f solid 1px;
+  border-bottom: black solid 1px;
   display: inline-block;
   padding-bottom: 0.3rem;
-  color: #2e368f;
+  color:black;
 }
 .firstDiv p{
   padding-top: 0.5rem;
@@ -241,7 +241,7 @@ footer {
 }
 .details h1 {
   padding-bottom: 1rem;
-  border-bottom: #0056b3 solid 1px;
+  border-bottom:black solid 1px;
   padding-top: 1rem;
   text-align: center;
 }
@@ -251,15 +251,14 @@ footer {
   text-align: center;
 }
 .container {
-  background-color: #e0e7f2;
+  background-color:#f4f4f4;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
   width: 100%;
   border: #f5f6f7 solid 5px ;
 }
 .contactUs{
-  background-color: #e0e7f2;
   text-align: center;
   border: #f5f6f7 solid 5px ;
   margin-bottom: 10px;
@@ -270,9 +269,9 @@ form {
   display: grid;
   gap: 10px;
 }
-label, input, textarea {
+/*label, input, textarea {
   width: 100%; 
-}
+}*/
 button {
   background-color: #007bff;
   color: #fff;
@@ -291,7 +290,7 @@ button:hover {
 .contactFooter h2{
  
   display: inline-block;
-  border-bottom:  #0056b3 solid 1px;
+  border-bottom:  black solid 1px;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
@@ -309,7 +308,7 @@ button:hover {
   .container{ max-width: 80%;}
   .details{
     flex-basis:50%;
-    border-left: #0056b3 solid 1px;
+    border-left: black solid 1px;
     padding-left: 1rem;
   }
 }
