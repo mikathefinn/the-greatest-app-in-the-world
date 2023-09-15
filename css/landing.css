@@ -20,6 +20,8 @@ figure {
 }
 figure img {
   width: 75%;
+  min-height: 251px;
+  min-width: 590px;
 }
 main {
   display: flex;
