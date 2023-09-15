@@ -79,8 +79,10 @@ header {
 
   background-color: #004d41;
 }
+
 .fa-arrow-left {
   padding-left: 1rem;
+  color: white;
 }
 
 .switch-header > h1 {
