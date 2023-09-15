@@ -55,12 +55,20 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   background-color: white;
+  letter-spacing: 0.2rem;
+  line-height: 2rem;
 }
+
 .grid-image {
   max-width: 50%;
 }
-#switch-all {
-  grid-column: span 2;
+.app-grid-item > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-grid-item > a > img {
+  padding-bottom: 1rem;
 }
 
 /************* SWITCH PAGE *************/
@@ -111,6 +119,9 @@ header {
 #counter {
   font-size: 2.2rem;
   color: #ffb633;
+}
+#switch-all {
+  grid-column: span 2;
 }
 /************* Style the grid items  *************/
 .fa-plug {
