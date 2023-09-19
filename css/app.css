@@ -123,6 +123,24 @@ header {
 #switch-all {
   grid-column: span 2;
 }
+
+.temperature {
+  margin-bottom: 3rem;
+}
+.temperature p {
+  text-align: center;
+}
+.timer p {
+  text-align: center;
+}
+.control-panel {
+  display: flex;
+  justify-content: space-around;
+}
+.control-panel button {
+  background-color: #004d40;
+  border-radius: 50%;
+}
 /************* Style the grid items  *************/
 .fa-plug {
   padding-right: 2rem;
