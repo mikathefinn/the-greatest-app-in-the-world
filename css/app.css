@@ -140,6 +140,13 @@ header {
 .control-panel button {
   background-color: #004d40;
   border-radius: 50%;
+  border: none;
+  box-shadow: 0.5rem 0.3rem 0.5rem grey;
+  max-width: 12rem;
+  max-height: 12rem;
+}
+.control-panel img {
+  width: 100%;
 }
 /************* Style the grid items  *************/
 .fa-plug {
