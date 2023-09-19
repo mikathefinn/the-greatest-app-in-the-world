@@ -71,7 +71,7 @@ header {
   padding-bottom: 1rem;
 }
 
-/************* SWITCH PAGE *************/
+/************* CONTROL PAGE *************/
 /************* MAIN *********/
 .wrapper {
   display: flex;
@@ -82,7 +82,7 @@ header {
   margin-top: 7rem;
 }
 
-.switch-header {
+.control-header {
   display: flex;
 
   background-color: #004d41;
@@ -93,14 +93,14 @@ header {
   color: white;
 }
 
-.switch-header > h1 {
+.control-header > h1 {
   font-size: 2.8rem;
   letter-spacing: 0.2rem;
   flex-basis: 100%;
   text-align: center;
 }
 
-.switch-main {
+.control-main {
   display: flex;
   flex-direction: column;
   justify-content: center;
