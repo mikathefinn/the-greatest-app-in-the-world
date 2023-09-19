@@ -127,10 +127,12 @@ header {
 .temperature {
   margin-bottom: 3rem;
 }
-.temperature p {
+.temperature h2,
+h3 {
   text-align: center;
 }
-.timer p {
+.timer h2,
+h3 {
   text-align: center;
 }
 .control-panel {
