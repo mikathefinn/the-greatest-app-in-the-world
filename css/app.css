@@ -186,6 +186,11 @@ header {
   flex: 0;
 }
 
+/************ CAROUSEL ************/
+
+.carousel-control-prev-icon {
+}
+
 /************ FOOTER ********/
 
 .widescreen {
