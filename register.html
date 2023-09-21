@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <title>register page</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/remo_logo_green_only_text.png" alt="" />
+      <nav>
+        <a href="">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </header>
+    <div class="registerPage">
+      <h1>Register</h1>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            placeholder="username"
+            id="Enter Username"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" placeholder="Enter Email" id="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            id="password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Confirm Password</label>
+          <input
+            type="password"
+            placeholder=" Repeat password"
+            id="confirmPassword"
+            required
+          />
+        </div>
+        <button class="submitRegister" type="submit">Register</button>
+      </form>
+      <p>Already have an account? <a class="loginLink" href="">Login</a></p>
+    </div>
+    <script>
+      document.getElementById("registrationForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          var username = document.getElementById("username").value;
+          var email = document.getElementById("email").value;
+          var password = document.getElementById("password").value;
+        });
+       
+        function validatePassword() {
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            if (password.length < 8) {
+                alert("Password must be at least 8 characters long.");
+                return false;
+            }
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+            return true;
+        }
+    </script>
+  </body>
+</html>
