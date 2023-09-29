@@ -15,50 +15,157 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <img class="header-logo" src="./images/remo.png" alt="" />
-        <nav class="app-navbar">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
-        </nav>
+   
+      <header class="control-header">
+        <i onclick="history.back()" class="fa-solid fa-arrow-left"></i>
+        <h1>Plug sockets</h1>
+       
       </header>
+     
+      <main class="control-main">
+        <img class="heading-image" src="images/plug-socket-2.jpeg" alt="plug socket">
+        <div id="usage"> 
+          <p>Your current usage is <span id="counter"></span> Watts.</p>
+        </div>
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')">All</button>
+          <button class="btn" onclick="filterSelection('living_room')">
+            Living Room
+          </button>
+          <button class="btn" onclick="filterSelection('bedroom1')">
+            Bedroom 1
+          </button>
+          <button class="btn" onclick="filterSelection('bedroom2')">
+            Bedroom 2
+          </button>
+          <button class="btn" onclick="filterSelection('kitchen')">Kitchen</button>
+          <button class="btn" onclick="filterSelection('hallway')">Hallway</button>
+        </div>
+        <section class="grid-container">
 
-      <main class="switch-main">
-        <section class="headings">
-          <h1>Plug sockets</h1>
-        </section>
-        <section class="switchpanel">
-          <h2 class="switch-h2">Switch on / off</h2>
-          <label class="toggle">
-            <input class="toggle-checkbox" type="checkbox" />
-            <div class="toggle-slot">
-              <div class="toggle-text">ON</div>
-              <div class="toggle-button"></div>
-            </div>
-          </label>
-        </section>
+    
+        <div class="container">
+
+
+              <div class="filterDiv grid-item living_room">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Livingroom</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="filterDiv grid-item kitchen">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Kitchen</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="filterDiv grid-item bedroom1">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Bedroom 1</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="filterDiv grid-item bedroom2">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Bedroom 2</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="filterDiv grid-item hallway">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Corridor</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="filterDiv grid-item">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Bathroom </p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="filterDiv grid-item all" id="switch-all">
+               <div class="box-1"> <i class="fa-solid fa-plug"></i>
+                <p class="box-title">All sockets </p>
+              </div>
+              <div class="box-2"> <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+             
+              </div>
+             
+          </section>
+
+ 
       </main>
       <footer>
-        <div class="address">
-          <p>Remo Inc.</p>
-          <p>1 Hacker Way</p>
-          <p>Menlo Park</p>
-          <p>CA 94025, United States</p>
-        </div>
-
-        <div class="social-media">
-          <a href="#"
-            ><i class="fa-brands fa-facebook-f" style="color: #dddcdc"></i
-          ></a>
-          <a href="#"
-            ><i class="fa-brands fa-x-twitter" style="color: #dddcdc"></i
-          ></a>
-          <a href="#"
-            ><i class="fa-brands fa-instagram" style="color: #dddcdc"></i
-          ></a>
-        </div>
+        <nav class="mobile-bottom-nav">
+          <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
+            <div class="mobile-bottom-nav__item-content">
+              <i class="fa-solid fa-house style="color: #144eb3;"></i>
+            </div>		
+          </div>
+          <div class="mobile-bottom-nav__item">		
+            <div class="mobile-bottom-nav__item-content">
+              <i class="fa-solid fa-user style="color: #144eb3;"></i>
+            </div>
+          </div>
+          <div class="mobile-bottom-nav__item">
+            <div class="mobile-bottom-nav__item-content">
+              <i class="fa-solid fa-envelope style="color: #144eb3;"></i>
+            </div>		
+          </div>
+          
+          <div class="mobile-bottom-nav__item">
+            <div class="mobile-bottom-nav__item-content">
+              <i class="fa-solid fa-gear style="color: #144eb3;"></i>
+            </div>		
+          </div>
+        </nav> 
       </footer>
     </div>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/livecam.js"></script>
+
   </body>
 </html>

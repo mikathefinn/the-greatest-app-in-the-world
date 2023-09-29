@@ -1,173 +1,80 @@
 html {
   font-size: 62.5%;
 }
+
 body {
-  font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgba(196, 196, 196, 0.885);
-}
-
-/************** NAVBAR ***********/
-header {
-  color: white;
-  background-color: #bed6fe;
-  width: 100%;
-  padding-left: 0.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 9vh;
-}
-.header-logo {
-  max-width: 10rem;
-}
-
-.app-navbar {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-}
-.app-navbar a {
-  font-size: 1.6rem;
-  text-decoration: none;
-  font-weight: 600;
-  color: #2e368f;
-}
-
-/************* APP PAGE ***********/
-/************* MAIN **************/
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-  padding: 2rem;
-}
-
-.grid-item {
-  border: 0.1rem solid #ddd;
-  border-radius: 0.8rem;
-  padding: 2rem;
-  text-align: center;
-  background-color: #87ddfa50;
-}
-
-.grid-image {
-  max-width: 100%; /* Make images responsive within their containers */
-}
-/************* SWITCH PAGE *************/
-/************* MAIN *********/
-.wrapper {
+  padding-inline: 2rem;
+  background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-  background-image: url(../images/tiago-fioreze-Lxq5czND8tU-unsplash.jpg);
-  background-position: center;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.switch-header {
-  display: flex;
-  flex-direction: column;
-}
-.switch-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.headings {
-  margin-block-end: 4rem;
-}
-h1 {
-  font-size: 4rem;
-}
-.switchpanel {
-  margin-block-end: 3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 80%;
 }
 
-.switch-h2 {
-  font-size: 3.2rem;
-  margin-block-end: 2rem;
-}
-footer {
-  color: black;
-  display: flex;
-  justify-content: space-between;
-  margin-block-end: 3rem;
-}
-.address {
-  padding-inline-start: 2rem;
-}
-.social-media {
-  padding: 2rem;
-}
-.social-media > a {
-  padding-inline-end: 1rem;
+h2 {
+  font-size: 2rem;
+  padding: 1rem;
 }
 
-/***********ON/OFF SWITCH**************/
-.toggle {
-  position: relative;
-  display: inline-block;
+.cam_feed img {
+  border-radius: 2rem;
+  padding-block-end: 1rem;
 }
 
-.toggle-checkbox {
-  display: none;
-}
-
-.toggle-slot {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 3.5rem;
-  width: 6rem;
-  border: 0px solid transparent;
-  border-radius: 10rem;
-  background-color: #bed6ff;
-  transition: background-color 250ms;
-  padding-left: 1rem;
-}
-
-.toggle-checkbox:checked ~ .toggle-slot {
-  background-color: #d0ff5d;
-}
-
-.toggle-button {
-  transform: translate(0.3rem, 0rem);
-  position: absolute;
-  top: 0.25rem;
-  left: 0rem;
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  background-color: #1b1464;
-  box-shadow: inset 0px 0px 0px 0.605em #1b1464;
-  transition: background-color 500ms 250ms, border-color 250ms,
-    transform 500ms cubic-bezier(0.26, 2, 0.46, 0.71);
-}
-
-.toggle-checkbox:checked ~ .toggle-slot .toggle-button {
-  background-color: #d0ff5d;
-  box-shadow: inset 0px 0px 0px 1rem #1b1464;
-  transform: translate(3.75rem, 0rem);
-}
-
-.toggle-text {
-  display: none;
-  color: #1b1464;
-  padding-inline-start: -0.1rem;
-  font-family: Arial, Helvetica, sans-serif;
+.filterDiv {
+  float: left;
+  font-size: 1.5rem;
+  background-color: white;
+  color: #333333;
+  width: 12rem;
+  padding-inline: 1rem 2rem;
+  text-align: left;
+  height: 15rem;
+  vertical-align: middle;
+  margin: 5px;
   font-weight: bold;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.5rem;
+  word-wrap: break-word;
 }
 
-.toggle-checkbox:checked ~ .toggle-slot .toggle-text {
-  display: block;
+.show {
+  display: flex;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#myBtnContainer {
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-mask-image: linear-gradient(to right, black 70%, transparent);
+  mask-image: linear-gradient(to right, black 50%, transparent);
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  font-size: 2rem;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #ddd;
+  border-radius: 3rem;
+}
+
+.btn.active {
+  background-color: #ffb633;
+  color: white;
+  border-radius: 3rem;
 }

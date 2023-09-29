@@ -6,119 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script
+    src="https://kit.fontawesome.com/ebfd1f2c4c.js"
+    crossorigin="anonymous"
+  ></script>
+
     <title>Remo home page</title>
   </head>
   <body>
-    <header>
-      <img class="header-logo" src="./images/remo.png" alt="" />
-      <nav class="app-navbar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-      </nav>
+    <header class="app-header">
+      <img class="header-logo" src="./images/remo_logo_green_only_text.png" alt="" />
+      
     </header>
     <div class="wrapper">
-      <main class="app-main">
-        <section class="grid-container">
-          <div class="grid-item">
-            <img class="grid-image" src="images/air-conditioning.png" alt="" />
-            <p>placeholder</p>
-            <label class="toggle">
-              <input class="toggle-checkbox" type="checkbox" />
-              <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
-                <div class="toggle-button"></div>
+      <img src="images/kerrostalo.webp" alt="">
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-block w-100">
+                <section class="grid-container">
+                
+                  <div class="grid-item app-grid-item">
+                  <a href="switch.html" class="app-link">
+                    <img class="grid-image" src="images/bedroom.svg" alt="" /></a>
+                    <p>Bedroom 1</p>
+                </div>
+
+                 <div class="grid-item app-grid-item">
+                  <a href="switch.html" class="app-link">
+                    <img class="grid-image" src="images/bedroom.svg" alt="" /></a>
+                    <p>Bedroom 2</p>
+                  </div>
+        
+                  <div class="grid-item app-grid-item">
+                    <a href="#" class="app-link"><img class="grid-image" src="images/kitchen.svg" alt="" /></a>
+                    <p>Kitchen</p>
+                  </div>
+        
+                  <div class="grid-item app-grid-item">
+                    <a href="#"><img class="grid-image" src="images/livingroom.svg" alt="" /></a>
+                    <p>Livingroom</p>
+                  </div>
+        
+                  <div class="grid-item app-grid-item">
+                    <a href="#"><img class="grid-image" src="images/bathroom.svg" alt="" /></a>
+                    <p>Bathroom</p>
+                  </div>
+        
+                  <div class="grid-item app-grid-item">
+                    <a href="sauna.html" class="app-link"><img class="grid-image" src="images/sauna.svg" alt="" /></a>
+                    <p>Sauna</p> 
+                  </div>
+
+                </section>
               </div>
-            </label>
+              </div>
+              
+              
+          <div class="carousel-item">
+          <div class="d-block w-100">
+            <section class="grid-container">
+          <div class="grid-item app-grid-item">
+            <a href="#" class="app-link"><img class="grid-image" src="images/hallway.svg" alt="" /></a>
+            <p>Hallway</p>
           </div>
 
-          <div class="grid-item">
-            <img class="grid-image" src="images/charger.png" alt="" />
-            <p>placeholder</p>
-            <label class="toggle">
-              <input class="toggle-checkbox" type="checkbox" />
-              <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
-                <div class="toggle-button"></div>
-              </div>
-            </label>
+         
+          <div class="grid-item app-grid-item">
+            <a href="#" class="app-link"><img class="grid-image" src="images/air-conditioning.png"  alt="" /> </a> 
+            <p>Temperature<br>control</p>
           </div>
 
-          <div class="grid-item">
-            <img class="grid-image" src="images/heat-system.png" alt="" />
-            <p>placeholder</p>
-            <label class="toggle">
-              <input class="toggle-checkbox" type="checkbox" />
-              <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
-                <div class="toggle-button"></div>
-              </div>
-            </label>
+          <div class="grid-item app-grid-item">
+            <a href="#" class="app-link"><img class="grid-image" src="images/parking.png"  alt="" /> </a> 
+            <p>Charging / Heating</p>        
           </div>
 
-          <div class="grid-item">
-            <img class="grid-image" src="images/oven.png" alt="" />
-            <p>placeholder</p>
-            <label class="toggle">
-              <input class="toggle-checkbox" type="checkbox" />
-              <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
-                <div class="toggle-button"></div>
-              </div>
-            </label>
-          </div>
+          
 
-          <div class="grid-item">
-            <img class="grid-image" src="images/sauna.png" alt="" />
-            <p>placeholder</p>
-            <label class="toggle">
-              <input class="toggle-checkbox" type="checkbox" />
-              <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
-                <div class="toggle-button"></div>
-              </div>
-            </label>
+          </section>
+          
+        </div>
           </div>
+          </div>
+           
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
 
-          <div class="grid-item">
-            <img class="grid-image" src="images/jalousie.png" alt="" />
-            <p>placeholder</p>
-            <label class="toggle">
-              <input class="toggle-checkbox" type="checkbox" />
-              <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
-                <div class="toggle-button"></div>
-              </div>
-            </label>
-          </div>
-
-          <div class="grid-item">
-            <img class="grid-image" src="images/outlet.png" alt="" />
-            <p>placeholder</p>
-            <label class="toggle">
-              <input class="toggle-checkbox" type="checkbox" />
-              <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
-                <div class="toggle-button"></div>
-              </div>
-            </label>
-          </div>
-
-          <div class="grid-item">
-            <img class="grid-image" src="images/parking.png" alt="" />
-            <p>placeholder</p>
-            <label class="toggle">
-              <input class="toggle-checkbox" type="checkbox" />
-              <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
-                <div class="toggle-button"></div>
-              </div>
-            </label>
-          </div>
         </section>
-      </main>
+
 
       <footer>
+   
+
+        <section class="small-screen">
+          <nav class="mobile-bottom-nav">
+            <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
+              <div class="mobile-bottom-nav__item-content">
+                <i class="fa-solid fa-house"></i>
+              </div>		
+            </div>
+            <div class="mobile-bottom-nav__item">		
+              <div class="mobile-bottom-nav__item-content">
+                <i class="fa-solid fa-user"></i>
+              </div>
+            </div>
+            <div class="mobile-bottom-nav__item">
+              <div class="mobile-bottom-nav__item-content">
+                <i class="fa-solid fa-envelope"></i>
+              </div>		
+            </div>
+            
+            <div class="mobile-bottom-nav__item">
+              <div class="mobile-bottom-nav__item-content">
+                <i class="fa-solid fa-gear"></i>
+              </div>		
+            </div>
+          </nav> 
+      </section>
+
+        <section class="widescreen">
         <div class="address">
           <p>Remo Inc.</p>
           <p>1 Hacker Way</p>
@@ -137,7 +157,9 @@
             ><i class="fa-brands fa-instagram" style="color: #dddcdc"></i
           ></a>
         </div>
+      </section>
       </footer>
-    </div>
+    
+    <script src="scripts/app.js"></script>
   </body>
 </html>
