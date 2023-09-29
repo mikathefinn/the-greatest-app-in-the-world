@@ -15,15 +15,16 @@
   </head>
   <body>
     <div class="wrapper">
-   
+
       <header class="control-header">
         <i onclick="history.back()" class="fa-solid fa-arrow-left"></i>
-        <h1>Plug sockets</h1>
-       
+        <h1>Control panel</h1>
+        <button id="languageSwitcher" onclick="changeLanguage()">Change Language</button>
+
       </header>
      
       <main class="control-main">
-        <img class="heading-image" src="images/plug-socket-2.jpeg" alt="plug socket">
+        <img class="heading-image" src="images/kerrostalo.webp" alt="All">
         <div id="usage"> 
           <p>Your current usage is <span id="counter"></span> Watts.</p>
         </div>
@@ -39,7 +40,7 @@
             Bedroom 2
           </button>
           <button class="btn" onclick="filterSelection('kitchen')">Kitchen</button>
-          <button class="btn" onclick="filterSelection('hallway')">Hallway</button>
+          <button class="btn" onclick="filterSelection('corridor')">Corridor</button>
         </div>
 
         <section class="grid-container">
@@ -92,7 +93,7 @@
                 </label>
               </div>
     
-              <div class="filterDiv grid-item hallway">
+              <div class="filterDiv grid-item corridor">
                 <i class="fa-solid fa-plug"></i>
                 <p class="box-title">Corridor</p>
                 <label class="toggle">

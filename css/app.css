@@ -105,6 +105,8 @@ header {
 }
 .heading-image {
   margin-bottom: 1rem;
+  height: 600px;
+  object-fit: cover;
 }
 #usage {
   display: flex;
