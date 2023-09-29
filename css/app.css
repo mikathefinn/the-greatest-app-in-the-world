@@ -104,7 +104,7 @@ header {
   justify-content: center;
 }
 .heading-image {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 #usage {
   display: flex;
@@ -123,7 +123,7 @@ header {
 }
 
 .control-box {
-  background-color: white;
+  background-color: #f2f2f2;
   border-radius: 0.8rem;
 }
 
@@ -138,7 +138,7 @@ header {
 .panel-numbers {
   font-size: 3rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .control-panel {
