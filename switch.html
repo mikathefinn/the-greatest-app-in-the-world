@@ -18,11 +18,11 @@
 
       <header class="control-header">
         <i onclick="history.back()" class="fa-solid fa-arrow-left"></i>
-        <h1>Control panel</h1>
+        <h1>Bedroom 1</h1>
       </header>
      
       <main class="control-main">
-        <img class="heading-image" src="images/kerrostalo.webp" alt="All">
+        <img class="heading-image" src="images/bedroom.png" alt="All">
         <div id="usage"> 
           <p>Your current usage is <span id="counter"></span> Watts.</p>
         </div>
@@ -32,87 +32,106 @@
 
             <section class="grid-container">
 
-              <div class="grid-item">
-                <i class="fa-solid fa-plug"></i>
-                <p class="box-title">Livingroom</p>
-                <label class="toggle">
-                  <input class="toggle-checkbox" type="checkbox" />
-                  <div class="toggle-slot">
-                    <div class="toggle-text">ON</div>
-                    <div class="toggle-button"></div>
-                  </div>
-                </label>
-              </div>
-    
-              <div class="grid-item">
-                <i class="fa-solid fa-plug"></i>
-                <p class="box-title">Kitchen</p>
-                <label class="toggle">
-                  <input class="toggle-checkbox" type="checkbox" />
-                  <div class="toggle-slot">
-                    <div class="toggle-text">ON</div>
-                    <div class="toggle-button"></div>
-                  </div>
-                </label>
-              </div>
-    
-              <div class="grid-item">
-                <i class="fa-solid fa-plug"></i>
-                <p class="box-title">Bedroom 1</p>
-                <label class="toggle">
-                  <input class="toggle-checkbox" type="checkbox" />
-                  <div class="toggle-slot">
-                    <div class="toggle-text">ON</div>
-                    <div class="toggle-button"></div>
-                  </div>
-                </label>
-              </div>
-    
-              <div class="grid-item">
-                <i class="fa-solid fa-plug"></i>
-                <p class="box-title">Bedroom 2</p>
-                <label class="toggle">
-                  <input class="toggle-checkbox" type="checkbox" />
-                  <div class="toggle-slot">
-                    <div class="toggle-text">ON</div>
-                    <div class="toggle-button"></div>
-                  </div>
-                </label>
-              </div>
-    
-              <div class="grid-item">
-                <i class="fa-solid fa-plug"></i>
-                <p class="box-title">Corridor</p>
-                <label class="toggle">
-                  <input class="toggle-checkbox" type="checkbox" />
-                  <div class="toggle-slot">
-                    <div class="toggle-text">ON</div>
-                    <div class="toggle-button"></div>
-                  </div>
-                </label>
-              </div>
-    
-              <div class="grid-item">
-                <i class="fa-solid fa-plug"></i>
-                <p class="box-title">Bathroom </p>
-                <label class="toggle">
-                  <input class="toggle-checkbox" type="checkbox" />
-                  <div class="toggle-slot">
-                    <div class="toggle-text">ON</div>
-                    <div class="toggle-button"></div>
-                  </div>
-                </label>
-              </div>
-    
               <div class="grid-item" id="switch-all">
-              <div class="box-1">
+                <div class="box-1">   
+                 <section class="lights">
+                  <p class="box-title">Ceiling light 1 </p>
+                  <label class="toggle">
+                    <input class="toggle-checkbox" type="checkbox" />
+                    <div class="toggle-slot">
+                      <div class="toggle-text">ON</div>
+                      <div class="toggle-button"></div>
+                    </div>
+                  </label>
+                </section>
+                
+                 <section class="lights">
+                  <p class="box-title">Ceiling light 2 </p>
+                  <label class="toggle">
+                    <input class="toggle-checkbox" type="checkbox" />
+                    <div class="toggle-slot">
+                      <div class="toggle-text">ON</div>
+                      <div class="toggle-button"></div>
+                    </div>
+                  </label>
+                </section>
+                </div>
+  
+                <div class="box-2">
+                  <p class="box-title">Brightness</p>
+                  <input type="range" id="slider" min="0" max="100" />
+                </div>
+              </div>
+
+    
+              <div class="grid-item">
+                <p class="box-title">Reading light 1</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="grid-item">
+                <p class="box-title">Reading light 2</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="grid-item">
                 <i class="fa-solid fa-plug"></i>
-                <p class="box-title">Brightness</p>
+                <p class="box-title">Socket 1</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
               </div>
-              <div class="box-2">
-                <input type="range" id="slider" min="0" max="100" />
+    
+              <div class="grid-item">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Socket 2</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
               </div>
-            </div>
+              <div class="grid-item">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Socket 3</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+              <div class="grid-item">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Socket 4</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
              
           </section>
 
