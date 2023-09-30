@@ -123,6 +123,27 @@ header {
   display: flex;
   flex-direction: column;
 }
+#oven {
+  grid-column: span 2;
+}
+
+#oven .panel-h2,
+#oven .panel-numbers {
+  font-size: 1.6rem;
+  margin: 1rem;
+}
+#oven .control-panel button {
+  background-color: #004d40;
+  border-radius: 50%;
+  border: none;
+  box-shadow: none;
+  max-width: 7rem;
+  max-height: 7rem;
+}
+
+
+
+/*********** CONTROL BOX *****/
 
 .control-box {
   background-color: #f2f2f2;
@@ -151,7 +172,6 @@ header {
   background-color: #004d40;
   border-radius: 50%;
   border: none;
-  box-shadow: 0.5rem 0.3rem 0.5rem grey;
   max-width: 12rem;
   max-height: 12rem;
 }
