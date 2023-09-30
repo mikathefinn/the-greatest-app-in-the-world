@@ -122,6 +122,8 @@ header {
 }
 #switch-all {
   grid-column: span 2;
+  display: flex;
+  flex-direction: column;
 }
 
 .control-box {
@@ -278,10 +280,10 @@ body {
 }
 
 input[type='range'] {
-  padding: 3rem 2rem;
   -webkit-appearance: none; /* Hide default*/
   width: 75%;
   background: transparent;
+  margin-top: 2rem;
 }
 input[type='range']::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -308,12 +310,12 @@ input[type='range']::-webkit-slider-thumb {
   background: #004d40;
   cursor: pointer;
   margin-top: 0.21rem; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
-  box-shadow: 0.1rem 0.1rem 0.3rem #000000;
+  /* box-shadow: 0.1rem 0.1rem 0.3rem #000000; */
 }
 
 /* All the same stuff for Firefox */
 input[type='range']::-moz-range-thumb {
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d;
+  /* box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d; */
   border: 0.1rem solid #000000;
   height: 1.6rem;
   width: 1.6rem;
@@ -324,7 +326,7 @@ input[type='range']::-moz-range-thumb {
 
 /* All the same stuff for IE */
 input[type='range']::-ms-thumb {
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d;
+  /* box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d; */
   border: 0.1rem solid #000000;
   height: 1.6rem;
   width: 1.6rem;
@@ -337,10 +339,9 @@ input[type='range']::-webkit-slider-runnable-track {
   width: 100%;
   height: 3.5rem;
   cursor: pointer;
-  box-shadow: 0.1rem 0.2rem 0.4rem #000000;
+  /* box-shadow: 0.1rem 0.2rem 0.4rem #000000; */
   background: linear-gradient(to right, #ffb73242, #ffb632);
   border-radius: 6rem;
-  /* border: 0.2px solid #010101; */
 }
 
 input[type='range']:focus::-webkit-slider-runnable-track {
@@ -351,8 +352,8 @@ input[type='range']::-moz-range-track {
   width: 100%;
   height: 0.84rem;
   cursor: pointer;
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d;
-  background: #3071a9;
+  /* box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d; */
+  background: linear-gradient(to right, #ffb73242, #ffb632);
   border-radius: 0.13rem;
   border: 0.02rem solid #010101;
 }
@@ -367,22 +368,22 @@ input[type='range']::-ms-track {
   color: transparent;
 }
 input[type='range']::-ms-fill-lower {
-  background: #2a6495;
+  background: linear-gradient(to right, #ffb73242, #ffb632);
   border: 0.02rem solid #010101;
   border-radius: 0.25rem;
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d;
+  /* box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d; */
 }
 input[type='range']:focus::-ms-fill-lower {
-  background: #3071a9;
+  background: linear-gradient(to right, #ffb73242, #ffb632);
 }
 input[type='range']::-ms-fill-upper {
-  background: #3071a9;
+  background: linear-gradient(to right, #ffb73242, #ffb632);
   border: 0.02rem solid #010101;
   border-radius: 0.25rem;
-  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d;
+  /* box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d; */
 }
 input[type='range']:focus::-ms-fill-upper {
-  background: #367ebd;
+  background: linear-gradient(to right, #ffb73242, #ffb632);
 }
 
 /************ BOTTOM MENU *****************/
