@@ -264,6 +264,130 @@ header {
   display: block;
 }
 
+/************ RANGE SLIDER ***************/
+body {
+  background-color: #f2f2f2;
+}
+.container {
+  display: flex;
+}
+
+.small-container {
+  margin: 4rem;
+  width: 25rem;
+  height: 10rem;
+  background-color: white;
+  color: #004d416d;
+}
+
+input[type='range'] {
+  padding: 3rem 2rem;
+  -webkit-appearance: none; /* Hide default*/
+  width: 75%;
+  background: transparent;
+}
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type='range'] :focus {
+  outline: none;
+}
+input[type='range']::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* border: 0.1rem solid #000000; */
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background: #004d40;
+  cursor: pointer;
+  margin-top: 0.21rem; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+  box-shadow: 0.1rem 0.1rem 0.3rem #000000;
+}
+
+/* All the same stuff for Firefox */
+input[type='range']::-moz-range-thumb {
+  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d;
+  border: 0.1rem solid #000000;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+input[type='range']::-ms-thumb {
+  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d;
+  border: 0.1rem solid #000000;
+  height: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3.5rem;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.2rem 0.4rem #000000;
+  background: linear-gradient(to right, #ffb73242, #ffb632);
+  border-radius: 6rem;
+  /* border: 0.2px solid #010101; */
+}
+
+input[type='range']:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+
+input[type='range']::-moz-range-track {
+  width: 100%;
+  height: 0.84rem;
+  cursor: pointer;
+  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d;
+  background: #3071a9;
+  border-radius: 0.13rem;
+  border: 0.02rem solid #010101;
+}
+
+input[type='range']::-ms-track {
+  width: 100%;
+  height: 0.84rem;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 1.6rem 0;
+  color: transparent;
+}
+input[type='range']::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.02rem solid #010101;
+  border-radius: 0.25rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d;
+}
+input[type='range']:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type='range']::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.02rem solid #010101;
+  border-radius: 0.25rem;
+  box-shadow: 0.1rem 0.1rem 0.1rem #000000, 0rem 0rem 0.1rem #0d0d0d;
+}
+input[type='range']:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+
 /************ BOTTOM MENU *****************/
 
 .mobile-bottom-nav {
@@ -291,4 +415,46 @@ header {
 .mobile-bottom-nav__item-content {
   display: flex;
   flex-direction: column;
+}
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+#myBtnContainer {
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-mask-image: linear-gradient(to right, black 70%, transparent);
+  mask-image: linear-gradient(to right, black 50%, transparent);
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  font-size: 2rem;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  background-color: #ddd;
+  border-radius: 3rem;
+}
+
+.btn.active {
+  background-color: #ffb633;
+  color: white;
+  border-radius: 3rem;
 }

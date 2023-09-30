@@ -27,8 +27,107 @@
         <div id="usage"> 
           <p>Your current usage is <span id="counter"></span> Watts.</p>
         </div>
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')">All</button>
+          <button class="btn" onclick="filterSelection('living_room')">
+            Living Room
+          </button>
+          <button class="btn" onclick="filterSelection('bedroom1')">
+            Bedroom 1
+          </button>
+          <button class="btn" onclick="filterSelection('bedroom2')">
+            Bedroom 2
+          </button>
+          <button class="btn" onclick="filterSelection('kitchen')">Kitchen</button>
+          <button class="btn" onclick="filterSelection('corridor')">Corridor</button>
+        </div>
+
+        <section class="grid-container">
+
+              <div class="filterDiv grid-item living_room">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Livingroom</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="filterDiv grid-item kitchen">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Kitchen</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="filterDiv grid-item bedroom1">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Bedroom 1</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="filterDiv grid-item bedroom2">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Bedroom 2</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="filterDiv grid-item corridor">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Corridor</p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="filterDiv grid-item">
+                <i class="fa-solid fa-plug"></i>
+                <p class="box-title">Bathroom </p>
+                <label class="toggle">
+                  <input class="toggle-checkbox" type="checkbox" />
+                  <div class="toggle-slot">
+                    <div class="toggle-text">ON</div>
+                    <div class="toggle-button"></div>
+                  </div>
+                </label>
+              </div>
+    
+              <div class="filterDiv grid-item all"  id="switch-all">
+                <div class="box-1">
+                  <i class="fa-solid fa-plug"></i>
+                  <p class="box-title">Brightness</p>
+                </div>
+                <div class="box-2">
+                  <input type="range" id="slider" min="0" max="100" />
+                </div>
+              </div>
+          </section>
          
-          <section class="rooms">
+          <!-- <section class="rooms">
 
             <section class="grid-container">
 
@@ -103,16 +202,19 @@
                   </div>
                 </label>
               </div>
-    
+     --><!-- 
               <div class="grid-item" id="switch-all">
                <div class="box-1"> <i class="fa-solid fa-plug"></i>
                 <p class="box-title">All sockets </p>
               </div>
-              <div class="box-2"> <label class="toggle">
+              <div class="box-2"> 
+                <input type="range" id="slider" min="0" max="100" />
+                 -->
+                <!-- <lel class="toggle">
                   <input class="toggle-checkbox" type="checkbox" />
                   <div class="toggle-slot">
                     <div class="toggle-text">ON</div>
-                    <div class="toggle-button"></div>
+                    <div class="toggle-button"></div> -->
                   </div>
                 </label>
               </div>
