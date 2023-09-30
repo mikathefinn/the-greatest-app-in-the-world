@@ -104,7 +104,13 @@ header {
   justify-content: center;
 }
 .heading-image {
+<<<<<<< HEAD
   margin-bottom: 3rem;
+=======
+  margin-bottom: 1rem;
+  height: 600px;
+  object-fit: cover;
+>>>>>>> joni
 }
 #usage {
   display: flex;
@@ -183,11 +189,6 @@ header {
   flex: 0;
 }
 
-/************ CAROUSEL ************/
-
-.carousel-control-prev {
-}
-
 /************ FOOTER ********/
 
 .widescreen {
@@ -223,7 +224,7 @@ header {
   width: 6rem;
   border: 0px solid transparent;
   border-radius: 10rem;
-  background-color: #f7f7f7;
+  background-color: #f2f2f2;
   transition: background-color 250ms;
   padding-left: 1rem;
 }
@@ -416,6 +417,12 @@ input[type='range']:focus::-ms-fill-upper {
   display: flex;
   flex-direction: column;
 }
+<<<<<<< HEAD
+=======
+
+/************ Joni *****************/
+
+>>>>>>> joni
 .filterDiv {
   display: none;
 }
@@ -457,4 +464,8 @@ input[type='range']:focus::-ms-fill-upper {
   background-color: #ffb633;
   color: white;
   border-radius: 3rem;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> joni

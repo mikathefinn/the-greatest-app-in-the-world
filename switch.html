@@ -15,15 +15,16 @@
   </head>
   <body>
     <div class="wrapper">
-   
+
       <header class="control-header">
         <i onclick="history.back()" class="fa-solid fa-arrow-left"></i>
-        <h1>Plug sockets</h1>
-       
+        <h1>Control panel</h1>
+        <button id="languageSwitcher" onclick="changeLanguage()">Change Language</button>
+
       </header>
      
       <main class="control-main">
-        <img class="heading-image" src="images/plug-socket-2.jpeg" alt="plug socket">
+        <img class="heading-image" src="images/kerrostalo.webp" alt="All">
         <div id="usage"> 
           <p>Your current usage is <span id="counter"></span> Watts.</p>
         </div>
@@ -129,9 +130,9 @@
          
           <!-- <section class="rooms">
 
-            <section class="grid-container">
+        <section class="grid-container">
 
-              <div class="grid-item">
+              <div class="filterDiv grid-item living_room">
                 <i class="fa-solid fa-plug"></i>
                 <p class="box-title">Livingroom</p>
                 <label class="toggle">
@@ -143,7 +144,7 @@
                 </label>
               </div>
     
-              <div class="grid-item">
+              <div class="filterDiv grid-item kitchen">
                 <i class="fa-solid fa-plug"></i>
                 <p class="box-title">Kitchen</p>
                 <label class="toggle">
@@ -155,7 +156,7 @@
                 </label>
               </div>
     
-              <div class="grid-item">
+              <div class="filterDiv grid-item bedroom1">
                 <i class="fa-solid fa-plug"></i>
                 <p class="box-title">Bedroom 1</p>
                 <label class="toggle">
@@ -167,7 +168,7 @@
                 </label>
               </div>
     
-              <div class="grid-item">
+              <div class="filterDiv grid-item bedroom2">
                 <i class="fa-solid fa-plug"></i>
                 <p class="box-title">Bedroom 2</p>
                 <label class="toggle">
@@ -179,7 +180,7 @@
                 </label>
               </div>
     
-              <div class="grid-item">
+              <div class="filterDiv grid-item corridor">
                 <i class="fa-solid fa-plug"></i>
                 <p class="box-title">Corridor</p>
                 <label class="toggle">
@@ -191,7 +192,7 @@
                 </label>
               </div>
     
-              <div class="grid-item">
+              <div class="filterDiv grid-item">
                 <i class="fa-solid fa-plug"></i>
                 <p class="box-title">Bathroom </p>
                 <label class="toggle">
@@ -216,11 +217,9 @@
                     <div class="toggle-text">ON</div>
                     <div class="toggle-button"></div> -->
                   </div>
-                </label>
+                  </label>
+                </div>
               </div>
-             
-              </div>
-             
           </section>
 
  
@@ -252,5 +251,7 @@
       </footer>
     </div>
     <script src="scripts/app.js"></script>
+    <script src="scripts/livecam.js"></script>
+
   </body>
 </html>

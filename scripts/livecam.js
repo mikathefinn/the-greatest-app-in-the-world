@@ -92,5 +92,8 @@ function loadFinnishTranslations() {
     });
 }
 
+
+
 // Call the function to load Finnish translations when needed
 loadFinnishTranslations();
+

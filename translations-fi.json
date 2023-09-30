@@ -1,0 +1,17 @@
+{
+  "header": {
+    "title": "remo -- päälle / pois",
+    "plugSockets": "Pistorasiat"
+  },
+  "buttons": {
+    "all": "Kaikki",
+    "living_room": "Olohuone",
+    "bedroom1": "Makuuhuone 1",
+    "bedroom2": "Makuuhuone 2",
+    "kitchen": "Keittiö",
+    "hallway": "Käytävä"
+  },
+  "labels": {
+    "usage": "Nykyinen käyttösi on"
+  }
+}
