@@ -1,0 +1,4 @@
+{
+  "usagetext": "Your current usage is <span id="counter"></span> Watts.",
+  "btn_all": "All"
+}

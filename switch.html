@@ -19,17 +19,17 @@
       <header class="control-header">
         <i onclick="history.back()" class="fa-solid fa-arrow-left"></i>
         <h1>Control panel</h1>
-        <button id="languageSwitcher" onclick="changeLanguage()">Change Language</button>
-
+        <button id="englishButton" onclick="changeLanguage('en')">English</button>
+        <button id="finnishButton" onclick="changeLanguage('fi')">Finnish</button>
       </header>
      
       <main class="control-main">
         <img class="heading-image" src="images/kerrostalo.webp" alt="All">
         <div id="usage"> 
-          <p>Your current usage is <span id="counter"></span> Watts.</p>
+          <p class="usagetext">Your current usage is <span id="counter"></span> Watts.</p>
         </div>
         <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')">All</button>
+          <button class="btn active btn_all" onclick="filterSelection('all')">All</button>
           <button class="btn" onclick="filterSelection('living_room')">
             Living Room
           </button>
@@ -164,6 +164,7 @@
     </div>
     <script src="scripts/app.js"></script>
     <script src="scripts/livecam.js"></script>
+    <script src="scripts/changelanguage.js"></script>
 
   </body>
 </html>

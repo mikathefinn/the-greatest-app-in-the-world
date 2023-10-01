@@ -72,25 +72,3 @@ function changeHeadingImage(imageSrc) {
   const headingImage = document.querySelector(".heading-image");
   headingImage.src = imageSrc;
 }
-
-function loadFinnishTranslations() {
-  // Load the Finnish translations JSON file
-  fetch("translations-fi.json") // Replace with the actual file path
-    .then((response) => response.json())
-    .then((data) => {
-      // Set the title of the page based on the Finnish translation
-      document.title = data.header.title;
-
-      // Set button labels based on Finnish translations
-      document.querySelector(".btn.all").textContent = data.buttons.all;
-      document.querySelector(".btn.living_room").textContent =
-        data.buttons.living_room;
-      // ...and so on for other elements
-    })
-    .catch((error) => {
-      console.error("Error loading Finnish translations:", error);
-    });
-}
-
-// Call the function to load Finnish translations when needed
-loadFinnishTranslations();
