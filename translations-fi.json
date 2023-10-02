@@ -1,4 +1,10 @@
 {
-  "usagetext": "Sähkönkäyttösi on tällä hetkellä <span id="counter"></span> wattia.",
-  "btn_all": "Kaikki"
+  "usagetext1": "Sähkönkäyttösi on tällä hetkellä",
+  "usagetext2": "wattia.",
+  "btn_all": "Kaikki",
+  "btn_lr": "Olohuone",
+  "btn_br1": "Makuuhuone 1",
+  "btn_br2": "Makuuhuone 2",
+  "btn_kitchen": "Keittiö",
+  "btn_corr": "Käytävä"
 }
