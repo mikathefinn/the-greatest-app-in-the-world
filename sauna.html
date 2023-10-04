@@ -25,20 +25,21 @@
             <section class="control-box">
             <section class="temperature">
                 <h2 class="panel-h2">Temperature</h2>
-                <h3 class="panel-numbers">85 &deg; C</h3>
+                <h3 id="currentTemp" class="panel-numbers">85 &deg; C</h3>
                 <div class="control-panel">
-                    <button class="decrease"><img src="images/minus.svg" alt="decrease"></button>
-                    <button class="increase"><img src="images/plus.svg" alt="increase"></button>
+                    <button onclick="changeTemperature(-5)" class="decrease"><img src="images/minus.svg" alt="decrease"></button>
+                    <button onclick="changeTemperature(5)" class="increase"><img src="images/plus.svg" alt="increase"></button>
                 </div>
 
             </section>
 
             <section class="timer">
                 <h2 class="panel-h2">Time</h2>
-                <h3 class="panel-numbers">00:45</h3>
+                <h3 class="panel-numbers"><input type="text" id="timer" placeholder="(mm:ss)" pattern="[0-9]{1,2}:[0-5][0-9]">
+                  <div id="timerDisplay"></div></h3>
                 <div class="control-panel">
-                   <button class="decrease"><img src="images/minus.svg" alt="decrease"></button>
-                  <button class="increase"><img src="images/plus.svg" alt="increase"></button>
+                   <button onclick="startTimer()" class="decrease"><img src="images/minus.svg" alt="decrease"></button>
+                  <button onclick="resetTimer()" class="increase"><img src="images/plus.svg" alt="increase"></button>
             </div>
         </section>
     </section>
@@ -70,6 +71,45 @@
             </nav> 
           </footer>
     </div>
+    <script>
+    let currentTemp = 70;
+      let timerInterval;
+      let totalSeconds = 0;
+  
+      function changeTemperature(amount) {
+          currentTemp += amount;
+          document.getElementById('currentTemp').textContent = currentTemp;
+      }
+      function startTimer() {
+        const timerInput = document.getElementById('timer').value.split(':');
+        const minutes = parseInt(timerInput[0]);
+        const seconds = parseInt(timerInput[1]);
+
+        if (!isNaN(minutes) && !isNaN(seconds) && (minutes > 0 || seconds > 0)) {
+            totalSeconds = minutes * 60 + seconds;
+            timerInterval = setInterval(updateTimer, 1000);
+        }
+    }
+    function updateTimer() {
+        const timerDisplay = document.getElementById('timerDisplay');
+        if (totalSeconds > 0) {
+            totalSeconds--;
+            const minutes = Math.floor(totalSeconds / 60);
+            const seconds = totalSeconds % 60;
+            timerDisplay.textContent = `Time remaining: ${minutes}:${seconds.toString().padStart(2, '0')}`;
+        } else {
+            clearInterval(timerInterval);
+            timerDisplay.textContent = 'Timer Expired';
+        }
+    }
+
+    function resetTimer() {
+        clearInterval(timerInterval);
+        totalSeconds = 0;
+        document.getElementById('timer').value = '';
+        document.getElementById('timerDisplay').textContent = '';
+    }
+      </script>
     <script src="scripts/app.js"></script>
 
 </body>
