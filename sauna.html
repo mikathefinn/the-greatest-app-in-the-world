@@ -38,8 +38,8 @@
                 <h3 class="panel-numbers"><input type="text" id="timer" placeholder="(mm:ss)" pattern="[0-9]{1,2}:[0-5][0-9]">
                   <div id="timerDisplay"></div></h3>
                 <div class="control-panel">
-                   <button onclick="startTimer()" class="decrease"><img src="images/minus.svg" alt="decrease"></button>
-                  <button onclick="resetTimer()" class="increase"><img src="images/plus.svg" alt="increase"></button>
+                   <button onclick="startTimer()" class="decrease"><img src="images/start-icon.png" alt=""></button>
+                  <button onclick="resetTimer()" class="increase"><img src="images/restart.png" alt="increase"></button>
             </div>
         </section>
     </section>
@@ -78,7 +78,7 @@
   
       function changeTemperature(amount) {
           currentTemp += amount;
-          document.getElementById('currentTemp').textContent = currentTemp;
+          document.getElementById('currentTemp').textContent = currentTemp +"˚c";
       }
       function startTimer() {
         const timerInput = document.getElementById('timer').value.split(':');

@@ -303,6 +303,18 @@ button:hover {
   width:20px;
   height: 20px;
 }
+#name {
+  border-color: #cdcdcd;
+  border-radius: 0.5rem;
+}
+#email {
+  border-color: #cdcdcd;
+  border-radius: 0.5rem;
+}
+#message {
+  border-color: #cdcdcd;
+  border-radius: 0.5rem;
+}
 @media only screen and (min-width: 768px){
   .contact{
     display: flex;
@@ -340,10 +352,12 @@ button:hover {
 .form-group input{
   height: 3rem;
   border: 1px solid rgb(203, 203, 203);
+  border-radius: 1rem
 }
 .submitRegister{
   font-size:large;
   margin: 1rem 0rem;
+  border-radius: 1rem;
 }
 .loginLink{
   text-decoration: none;

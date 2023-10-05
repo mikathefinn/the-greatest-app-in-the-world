@@ -125,8 +125,20 @@ header {
 .control-box {
   background-color: white;
   border-radius: 0.8rem;
+  /* add min hight because the bottom nav bar floats over the content*/
+  min-height: 100vh;
 }
-
+/*add style for #timer and #timerDisplay */
+#timer{
+  min-height: 4vh;
+    text-align: center;
+    border-radius: 0.5rem;
+    border-color: #eee;
+}
+#timerDisplay{
+  padding-top: 1rem;
+    font-size: 18px
+}
 .temperature {
   margin-bottom: 3rem;
 }
