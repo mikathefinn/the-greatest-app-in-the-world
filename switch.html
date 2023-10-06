@@ -17,22 +17,22 @@
     <div class="wrapper">
       <header class="control-header">
         <i onclick="history.back()" class="fa-solid fa-arrow-left"></i>
-        <h1>Control panel</h1>
-        <button id="englishButton" onclick="changeLanguage('en')">
-          English
-        </button>
-        <button id="finnishButton" onclick="changeLanguage('fi')">
-          Finnish
-        </button>
+        <img
+          class="header-logo"
+          src="./images/remo_logo_green_only_text.png"
+          alt=""
+        />
+        <div class="language-dropdown">
+          <i class="fa-solid fa-globe" id="language-icon"></i>
+          <div class="dropdown-content">
+            <div id="englishButton" onclick="changeLanguage('en')">English</div>
+            <div id="finnishButton" onclick="changeLanguage('fi')">Finnish</div>
+          </div>
+        </div>
       </header>
 
       <main class="control-main">
         <img class="heading-image" src="images/kerrostalo.webp" alt="All" />
-        <div id="usage">
-          <p class="usagetext1">Your current usage is</p>
-          &nbsp;<span id="counter"></span>&nbsp;
-          <p class="usagetext2">watts.</p>
-        </div>
         <div id="myBtnContainer">
           <button class="btn active btn_all" onclick="filterSelection('all')">
             All
@@ -61,10 +61,11 @@
             <label class="toggle">
               <input class="toggle-checkbox" type="checkbox" />
               <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
+                <!-- <div class="toggle-text">ON</div> -->
                 <div class="toggle-button"></div>
               </div>
             </label>
+            <span class="wattage"></span>
           </div>
 
           <div class="filterDiv grid-item kitchen">
@@ -73,10 +74,11 @@
             <label class="toggle">
               <input class="toggle-checkbox" type="checkbox" />
               <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
+                <div class="toggle-text"></div>
                 <div class="toggle-button"></div>
               </div>
             </label>
+            <span class="wattage"></span>
           </div>
 
           <div class="filterDiv grid-item bedroom1">
@@ -85,10 +87,11 @@
             <label class="toggle">
               <input class="toggle-checkbox" type="checkbox" />
               <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
+                <div class="toggle-text"></div>
                 <div class="toggle-button"></div>
               </div>
             </label>
+            <span class="wattage"></span>
           </div>
 
           <div class="filterDiv grid-item bedroom2">
@@ -97,10 +100,11 @@
             <label class="toggle">
               <input class="toggle-checkbox" type="checkbox" />
               <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
+                <div class="toggle-text"></div>
                 <div class="toggle-button"></div>
               </div>
             </label>
+            <span class="wattage"></span>
           </div>
 
           <div class="filterDiv grid-item corridor">
@@ -109,10 +113,11 @@
             <label class="toggle">
               <input class="toggle-checkbox" type="checkbox" />
               <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
+                <div class="toggle-text"></div>
                 <div class="toggle-button"></div>
               </div>
             </label>
+            <span class="wattage"></span>
           </div>
 
           <div class="filterDiv grid-item">
@@ -121,10 +126,11 @@
             <label class="toggle">
               <input class="toggle-checkbox" type="checkbox" />
               <div class="toggle-slot">
-                <div class="toggle-text">ON</div>
+                <div class="toggle-text"></div>
                 <div class="toggle-button"></div>
               </div>
             </label>
+            <span class="wattage"></span>
           </div>
 
           <div class="filterDiv grid-item all" id="switch-all">
@@ -136,15 +142,16 @@
               <label class="toggle">
                 <input class="toggle-checkbox" type="checkbox" />
                 <div class="toggle-slot">
-                  <div class="toggle-text">ON</div>
+                  <div class="toggle-text"></div>
                   <div class="toggle-button"></div>
                 </div>
               </label>
+              <span class="wattage"></span>
             </div>
           </div>
         </section>
       </main>
-      <footer>
+      <!-- <footer>
         <nav class="mobile-bottom-nav">
           <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
             <div class="mobile-bottom-nav__item-content">
@@ -168,7 +175,7 @@
             </div>
           </div>
         </nav>
-      </footer>
+      </footer> -->
     </div>
     <script src="scripts/app.js"></script>
     <script src="scripts/livecam.js"></script>

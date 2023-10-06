@@ -24,8 +24,8 @@ function filterSelection(c) {
     case "kitchen":
       changeHeadingImage("images/kitchen.png");
       break;
-    case "hallway":
-      changeHeadingImage("images/hallway.png");
+    case "corridor":
+      changeHeadingImage("images/corridor.png");
       break;
     default:
       changeHeadingImage("images/kerrostalo.webp");
@@ -72,3 +72,58 @@ function changeHeadingImage(imageSrc) {
   const headingImage = document.querySelector(".heading-image");
   headingImage.src = imageSrc;
 }
+
+const navbar = document.getElementById("myBtnContainer");
+
+navbar.addEventListener("click", function (event) {
+  if (event.target.classList.contains("btn")) {
+    const link = event.target;
+    const linkLeft = link.offsetLeft;
+    const linkWidth = link.clientWidth;
+    const navbarWidth = navbar.clientWidth;
+    const newScrollLeft = linkLeft - navbarWidth / 2 + linkWidth / 2;
+    navbar.scrollLeft = newScrollLeft;
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the language dropdown and language icon
+  var dropdown = document.querySelector(".language-dropdown");
+  var languageIcon = document.querySelector("#language-icon");
+
+  // Add a click event listener to the document
+  document.addEventListener("click", function (event) {
+    // Check if the click is outside the language dropdown or language icon
+    if (
+      !dropdown.contains(event.target) &&
+      !languageIcon.contains(event.target)
+    ) {
+      // Close the dropdown by removing the "active" class
+      dropdown.classList.remove("active");
+    }
+  });
+
+  // Toggle the dropdown when clicking on the language icon
+  languageIcon.addEventListener("click", function () {
+    dropdown.classList.toggle("active");
+  });
+
+  // Add a click event listener to language options
+  var languageOptions = document.querySelectorAll(
+    ".language-dropdown .dropdown-content div"
+  );
+  languageOptions.forEach(function (option) {
+    option.addEventListener("click", function () {
+      // Close the dropdown when a language option is clicked
+      dropdown.classList.remove("active");
+
+      // Remove the "highlight" class from all options
+      languageOptions.forEach(function (opt) {
+        opt.classList.remove("highlight");
+      });
+
+      // Add the "highlight" class to the clicked option
+      this.classList.add("highlight");
+    });
+  });
+});
