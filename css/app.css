@@ -5,7 +5,6 @@ body {
   font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
   color: rgba(32, 31, 31, 0.885);
-  max-width: 160rem;
   background-color: #f2f2f2;
 }
 
@@ -36,10 +35,15 @@ header {
   font-weight: 600;
   color: white;
 }
+.widescreen-nav {
+  display: none;
+}
 
 /************* APP PAGE ***********/
 /************* MAIN **************/
-
+.widescreen-grid {
+  display: none;
+}
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -187,11 +191,13 @@ header {
   font-size: 2.3rem;
   text-align: center;
   margin: 1rem 1rem;
+  flex-basis: 100%;
 }
 .panel-numbers {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 4rem;
+  flex-basis: 100%;
 }
 
 .control-panel {
@@ -249,17 +255,7 @@ header {
   display: none;
 }
 
-/*
-.address {
-  padding-inline-start: 2rem;
-}
-.social-media {
-  padding: 2rem;
-}
-.social-media > a {
-  padding-inline-end: 1rem;
-}
-*/
+
 /***********ON/OFF SWITCH**************/
 .toggle {
   flex: 1 0 100%;
@@ -320,8 +316,7 @@ header {
 }
 
 /************ RANGE SLIDER ***************/
-body {
-}
+
 .container {
   display: flex;
 }
@@ -473,11 +468,36 @@ input[type='range']:focus::-ms-fill-upper {
 /************ MEDIA QUERIES **********/
 
 @media screen and (min-width: 768px) {
-  .body {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+  header {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .widescreen-nav {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+  .widescreen-nav a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
   }
 
+  #main-image {
+    width: 120rem;
+    height: 30em;
+    object-fit: cover;
+  }
   .widescreen {
-    display: block;
+    display: flex;
+    justify-content: space-between;
   }
   .address {
     padding-inline-start: 2rem;
@@ -494,5 +514,11 @@ input[type='range']:focus::-ms-fill-upper {
   }
   .fa-brands {
     color: #004d40;
+  }
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
