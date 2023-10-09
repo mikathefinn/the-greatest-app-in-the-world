@@ -271,7 +271,7 @@ main {
 
 /************ BOTTOM MENU *****************/
 
-/* .mobile-bottom-nav {
+.mobile-bottom-nav {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -296,7 +296,7 @@ main {
 .mobile-bottom-nav__item-content {
   display: flex;
   flex-direction: column;
-} */
+}
 
 /************ Joni *****************/
 
