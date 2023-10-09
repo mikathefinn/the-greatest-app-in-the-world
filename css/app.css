@@ -104,7 +104,7 @@ header {
   justify-content: center;
 }
 .heading-image {
-  margin-bottom: 1rem;
+  margin: 5rem 0 1rem 0;
 }
 #usage {
   display: flex;
@@ -125,16 +125,22 @@ header {
 }
 #oven {
   grid-column: span 2;
+  display: flex;
+  flex-direction: column;
 }
-
+#oven .control-panel {
+  flex-basis: 50%;
+  padding-top: 1rem;
+}
 #oven .panel-h2,
 #oven .panel-numbers {
   font-size: 1.6rem;
   margin: 1rem;
 }
-#oven .temperature {
+#oven > section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 #oven .control-panel button {
   background-color: #004d40;
@@ -144,12 +150,32 @@ header {
   max-width: 7rem;
   max-height: 7rem;
 }
+.timer .panel-h2 {
+  flex-basis: 50%;
+}
+.timer .control-panel {
+  margin-bottom: 2rem;
+}
 
 /*********** CONTROL BOX *****/
 
 .control-box {
   background-color: #f2f2f2;
   border-radius: 0.8rem;
+  /* add min hight because the bottom nav bar floats over the content*/
+  min-height: 100vh;
+}
+/*add style for #timer and #timerDisplay */
+#timer {
+  min-height: 4vh;
+  text-align: center;
+  border-radius: 0.5rem;
+  border-color: #eee;
+}
+
+#timerDisplay {
+  padding-top: 1rem;
+  font-size: 18px;
 }
 
 .temperature {
@@ -435,8 +461,8 @@ input[type='range']:focus::-ms-fill-upper {
   flex-direction: column;
   justify-content: center;
 }
-.mobile-bottom-nav__item--active {
-  color: #ffb632;
+.mobile-bottom-nav a {
+  color: #000000;
 }
 .mobile-bottom-nav__item-content {
   display: flex;
