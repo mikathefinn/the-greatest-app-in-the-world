@@ -132,6 +132,10 @@ header {
   font-size: 1.6rem;
   margin: 1rem;
 }
+#oven .temperature {
+  display: flex;
+  justify-content: space-between;
+}
 #oven .control-panel button {
   background-color: #004d40;
   border-radius: 50%;
@@ -140,8 +144,6 @@ header {
   max-width: 7rem;
   max-height: 7rem;
 }
-
-
 
 /*********** CONTROL BOX *****/
 
