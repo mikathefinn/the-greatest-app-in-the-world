@@ -255,7 +255,6 @@ header {
   display: none;
 }
 
-
 /***********ON/OFF SWITCH**************/
 .toggle {
   flex: 1 0 100%;
@@ -491,10 +490,43 @@ input[type='range']:focus::-ms-fill-upper {
   }
 
   #main-image {
-    width: 120rem;
-    height: 30em;
+    width: 100%;
+    height: 30rem;
     object-fit: cover;
   }
+  #carouselExampleIndicators {
+    display: none;
+  }
+  .widescreen-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    max-width: 120rem;
+  }
+  .grid-item {
+    border-radius: 0.8rem;
+    padding: 2rem 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .grid-item a {
+    width: 9rem;
+    height: 8.7rem;
+  }
+  .grid-image {
+    max-width: 100%;
+  }
+
+  /*********** FOOTER DESKTOP ***********/
   .widescreen {
     display: flex;
     justify-content: space-between;
