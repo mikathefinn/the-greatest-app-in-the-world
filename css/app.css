@@ -355,21 +355,17 @@ main {
   float: right;
   position: relative;
   cursor: pointer;
-  margin-right: 20px; /* Adjust as needed */
+  margin-right: 20px;
 }
-
-/* #language-icon {
-  margin-top: 8px;
-} */
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 120px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  right: 0; /* Align the dropdown to the right */
+  right: 0;
 }
 
 .dropdown-content div {
@@ -381,11 +377,15 @@ main {
   cursor: pointer;
 }
 
+.dropdown-content img {
+  height: 1.2rem;
+  padding-inline-end: 0.5rem;
+}
+
 .dropdown-content div:hover {
   background-color: #ffb633;
 }
 
-/* Add this style to show the dropdown when the "active" class is applied */
 .language-dropdown.active .dropdown-content {
   display: block;
 }

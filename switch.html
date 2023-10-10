@@ -25,8 +25,12 @@
         <div class="language-dropdown">
           <i class="fa-solid fa-globe" id="language-icon"></i>
           <div class="dropdown-content">
-            <div id="englishButton" onclick="changeLanguage('en')">English</div>
-            <div id="finnishButton" onclick="changeLanguage('fi')">Finnish</div>
+            <div id="englishButton" onclick="changeLanguage('en')">
+              <img src="images/gb.svg" alt="" />English
+            </div>
+            <div id="finnishButton" onclick="changeLanguage('fi')">
+              <img src="images/fi.svg" alt="" />Finnish
+            </div>
           </div>
         </div>
       </header>
@@ -51,6 +55,9 @@
           </button>
           <button class="btn btn_corr" onclick="filterSelection('corridor')">
             Corridor
+          </button>
+          <button class="btn btn_bath" onclick="filterSelection('bathroom')">
+            Bathroom
           </button>
         </div>
 

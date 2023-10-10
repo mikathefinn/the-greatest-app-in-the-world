@@ -27,6 +27,9 @@ function filterSelection(c) {
     case "corridor":
       changeHeadingImage("images/corridor.png");
       break;
+    case "bathroom":
+      changeHeadingImage("images/bathroom.webp");
+      break;
     default:
       changeHeadingImage("images/kerrostalo.webp");
   }

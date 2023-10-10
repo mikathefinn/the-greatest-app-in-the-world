@@ -62,11 +62,6 @@ const updateRandomWattage = () => {
   switchAllCheckbox.checked = anyRoomToggleOn;
 };
 
-toggleContainers.forEach((toggleContainer) => {
-  const toggleCheckbox = toggleContainer.querySelector(".toggle-checkbox");
-  toggleCheckbox.addEventListener("change", updateRandomWattage);
-});
-
 switchAllCheckbox.addEventListener("change", () => {
   const isChecked = switchAllCheckbox.checked;
 
@@ -77,19 +72,9 @@ switchAllCheckbox.addEventListener("change", () => {
 
     // Check or uncheck the room toggles based on the "switch-all" state
     roomToggleCheckbox.checked = isChecked;
-
-    switchAllCheckbox.checked = !switchAllCheckbox.checked;
   });
 
   updateRandomWattage();
-});
-
-const alinpainike = document.querySelector("#switch-all");
-
-alinpainike.addEventListener("change", () => {
-  console.log("Painoit alinta painiketta.");
-  console.log(alinpainike);
-  switchAllCheckbox.checked = !switchAllCheckbox.checked;
 });
 
 setInterval(updateRandomWattage, 2000);
