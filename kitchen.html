@@ -32,7 +32,7 @@
 
             <section class="grid-container">
 
-              <div class="grid-item" id="switch-all">
+              <div class="grid-item" id="kitchen-all">
                 <div class="box-1">   
                  <section class="lights">
                   <p class="box-title">Ceiling light 1 </p>
@@ -61,9 +61,34 @@
                   <p class="box-title">Brightness</p>
                   <input type="range" id="slider" min="0" max="100" />
                 </div>
+                <div class="box-3">
+                  <div class="grid-item">
+                    <i class="fa-solid fa-plug"></i>
+                    <p class="box-title">Socket 1</p>
+                    <label class="toggle">
+                      <input class="toggle-checkbox" type="checkbox" />
+                      <div class="toggle-slot">
+                        <div class="toggle-text">ON</div>
+                        <div class="toggle-button"></div>
+                      </div>
+                    </label>
+                  </div>
+        
+                  <div class="grid-item">
+                    <i class="fa-solid fa-plug"></i>
+                    <p class="box-title">Socket 2</p>
+                    <label class="toggle">
+                      <input class="toggle-checkbox" type="checkbox" />
+                      <div class="toggle-slot">
+                        <div class="toggle-text">ON</div>
+                        <div class="toggle-button"></div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
               </div>
     
-              <div class="grid-item">
+              <div class="grid-item" id="socket1">
                 <i class="fa-solid fa-plug"></i>
                 <p class="box-title">Socket 1</p>
                 <label class="toggle">
@@ -75,7 +100,7 @@
                 </label>
               </div>
     
-              <div class="grid-item">
+              <div class="grid-item" id="socket2">
                 <i class="fa-solid fa-plug"></i>
                 <p class="box-title">Socket 2</p>
                 <label class="toggle">
