@@ -167,6 +167,9 @@ header {
 .timer .control-panel {
   margin-bottom: 2rem;
 }
+.box-3 {
+  display: none;
+}
 
 /*********** CONTROL BOX *****/
 
@@ -399,7 +402,7 @@ input[type='range']::-webkit-slider-runnable-track {
 }
 
 input[type='range']:focus::-webkit-slider-runnable-track {
-  background: #367ebd;
+  background: linear-gradient(to right, #ffb73242, #ffb632);
 }
 
 input[type='range']::-moz-range-track {
@@ -554,17 +557,30 @@ input[type='range']:focus::-ms-fill-upper {
   #kitchen-all {
     grid-column: 1/4;
     grid-row: 1/2;
+    flex-direction: row;
+  }
+  .box-1 {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 25%;
+  }
+  .box-2 {
+    flex-basis: 40%;
+    align-items: center;
+  }
+  .box-3 {
+    display: block;
   }
   #socket1 {
     display: none;
   }
-  #socket2 {display:none;
+  #socket2 {
+    display: none;
   }
   #oven {
     grid-column: 1/4;
     grid-row: 2/3;
     flex-direction: row;
-}
   }
 
   /******** APP PAGE LAYOUT *******/
