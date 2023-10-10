@@ -11,14 +11,32 @@ const func = () => {
 func();
 setInterval(func, ms);
 
-let currentTemp = 70;
 let timerInterval;
 let totalSeconds = 0;
+let temperature = 100;
 
-function changeTemperature(amount) {
-    currentTemp += amount;
-    document.getElementById('currentTemp').textContent = currentTemp +"˚c";
+function updateTemperature() {
+    document.getElementById("temperature").textContent = temperature;
 }
+
+function increaseTemperature() {
+    temperature += 10;
+    if (temperature > 360) {
+        temperature = 360;
+    }
+    updateTemperature();
+}
+
+function decreaseTemperature() {
+    temperature -= 10;
+    if (temperature < 100) {
+        temperature = 100 ;
+    }
+    updateTemperature();
+  }
+
+
+
 function startTimer() {
   const timerInput = document.getElementById('timer').value.split(':');
   const minutes = parseInt(timerInput[0]);
