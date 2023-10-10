@@ -8,12 +8,16 @@ const getRandomInt = (min, max) => {
 };
 
 const updateRandomWattage = () => {
+  let totalWattage = 0;
+  let anyRoomToggleOn = false;
+
   toggleContainers.forEach((toggleContainer) => {
     const toggleCheckbox = toggleContainer.querySelector(".toggle-checkbox");
     const wattageSpan = toggleContainer.querySelector(".wattage");
 
     if (toggleCheckbox.checked) {
-      let minWattage, maxWattage;
+      let minWattage = 0;
+      let maxWattage = 0;
 
       if (toggleContainer.classList.contains("living_room")) {
         minWattage = 40;
@@ -37,51 +41,16 @@ const updateRandomWattage = () => {
 
       const randNum = getRandomInt(minWattage, maxWattage);
       wattageSpan.textContent = randNum + "W";
+      totalWattage += randNum;
+      console.log(anyRoomToggleOn);
+
+      anyRoomToggleOn = true;
+      console.log(anyRoomToggleOn);
     } else {
       wattageSpan.textContent = "OFF";
     }
   });
-};
 
-const toggleChangeHandler = () => {
-  updateRandomWattage();
-
-  // Calculate the totalWattage based on the state of room toggles
-  let totalWattage = 0;
-  let anyRoomToggleOn = false;
-
-  toggleContainers.forEach((toggleContainer) => {
-    const toggleCheckbox = toggleContainer.querySelector(".toggle-checkbox");
-    if (toggleCheckbox.checked) {
-      let minWattage, maxWattage;
-
-      if (toggleContainer.classList.contains("living_room")) {
-        minWattage = 40;
-        maxWattage = 55;
-      } else if (toggleContainer.classList.contains("kitchen")) {
-        minWattage = 110;
-        maxWattage = 140;
-      } else if (toggleContainer.classList.contains("bedroom1")) {
-        minWattage = 2;
-        maxWattage = 4;
-      } else if (toggleContainer.classList.contains("bedroom2")) {
-        minWattage = 2;
-        maxWattage = 4;
-      } else if (toggleContainer.classList.contains("corridor")) {
-        minWattage = 2;
-        maxWattage = 4;
-      } else if (toggleContainer.classList.contains("bathroom")) {
-        minWattage = 2;
-        maxWattage = 4;
-      }
-
-      const randNum = getRandomInt(minWattage, maxWattage);
-      totalWattage += randNum;
-      anyRoomToggleOn = true;
-    }
-  });
-
-  // Update the "switch-all" total wattage and toggle state
   const switchAllTotalWattageSpan = document.querySelector(
     "#switch-all .wattage"
   );
@@ -89,16 +58,40 @@ const toggleChangeHandler = () => {
     ? totalWattage + "W"
     : "OFF";
 
-  // Toggle the switch-all checkbox based on the state of any room toggle
+  // Update the "switch-all" checkbox state
   switchAllCheckbox.checked = anyRoomToggleOn;
 };
 
 toggleContainers.forEach((toggleContainer) => {
   const toggleCheckbox = toggleContainer.querySelector(".toggle-checkbox");
-  toggleCheckbox.addEventListener("change", toggleChangeHandler);
+  toggleCheckbox.addEventListener("change", updateRandomWattage);
 });
 
-// Initialize the total wattage and switch-all toggle state
-updateRandomWattage();
-toggleChangeHandler(); // Added to initialize the switch-all state
+switchAllCheckbox.addEventListener("change", () => {
+  const isChecked = switchAllCheckbox.checked;
+
+  // Loop through room toggle checkboxes and update their state
+  toggleContainers.forEach((roomToggleContainer) => {
+    const roomToggleCheckbox =
+      roomToggleContainer.querySelector(".toggle-checkbox");
+
+    // Check or uncheck the room toggles based on the "switch-all" state
+    roomToggleCheckbox.checked = isChecked;
+
+    switchAllCheckbox.checked = !switchAllCheckbox.checked;
+  });
+
+  updateRandomWattage();
+});
+
+const alinpainike = document.querySelector("#switch-all");
+
+alinpainike.addEventListener("change", () => {
+  console.log("Painoit alinta painiketta.");
+  console.log(alinpainike);
+  switchAllCheckbox.checked = !switchAllCheckbox.checked;
+});
+
 setInterval(updateRandomWattage, 2000);
+
+updateRandomWattage(); // Initialize the state

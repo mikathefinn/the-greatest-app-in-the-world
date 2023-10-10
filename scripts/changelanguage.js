@@ -10,8 +10,6 @@ function loadTranslations() {
     .then((response) => response.json())
     .then((data) => {
       // Update HTML elements with translated content
-      document.querySelector(".usagetext1").textContent = data.usagetext1;
-      document.querySelector(".usagetext2").textContent = data.usagetext2;
       document.querySelector(".btn_all").textContent = data.btn_all;
       document.querySelector(".btn_lr").textContent = data.btn_lr;
       document.querySelector(".btn_br1").textContent = data.btn_br1;
