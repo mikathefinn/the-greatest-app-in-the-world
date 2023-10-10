@@ -337,6 +337,7 @@ button:hover {
 .form-group input {
   height: 3rem;
   border: 1px solid rgb(203, 203, 203);
+  border-radius: 0.5rem;
 }
 .submitRegister {
   font-size: large;
