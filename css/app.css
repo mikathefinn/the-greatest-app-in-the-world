@@ -497,7 +497,15 @@ input[type='range']:focus::-ms-fill-upper {
   #carouselExampleIndicators {
     display: none;
   }
-  .widescreen-grid {
+
+  /******** PAGES ***********/
+  .heading-image {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1fr);
@@ -507,6 +515,48 @@ input[type='range']:focus::-ms-fill-upper {
     max-width: 120rem;
   }
   .grid-item {
+    border-radius: 0.8rem;
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  #switch-all {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    flex-direction: row;
+  }
+  #switch-all .box-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    flex-basis: 60%;
+  }
+  #switch-all .box-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+  }
+
+  /******** APP PAGE LAYOUT *******/
+  .widescreen-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    max-width: 120rem;
+  }
+  .widescreen-grid .grid-item {
     border-radius: 0.8rem;
     padding: 2rem 6rem;
     display: flex;
@@ -525,7 +575,6 @@ input[type='range']:focus::-ms-fill-upper {
   .grid-image {
     max-width: 100%;
   }
-
   /*********** FOOTER DESKTOP ***********/
   .widescreen {
     display: flex;
