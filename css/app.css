@@ -602,7 +602,7 @@ input[type='range']:focus::-ms-fill-upper {
     border-radius: 0.8rem;
     padding: 2rem 6rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     background-color: white;
     letter-spacing: 0.2rem;
@@ -619,11 +619,16 @@ input[type='range']:focus::-ms-fill-upper {
   }
   /*********** FOOTER DESKTOP ***********/
   .widescreen {
+    width: 70rem;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 2rem;
   }
   .address {
     padding-inline-start: 2rem;
+    font-size: 1.5rem;
+    line-height: normal;
+    letter-spacing: 0.2rem;
   }
   .social-media {
     font-size: 1.8rem;
