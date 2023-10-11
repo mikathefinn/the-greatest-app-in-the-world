@@ -561,6 +561,7 @@ input[type='range']:focus::-ms-fill-upper {
   #underfloor-heating {
     grid-row: 1/2;
     grid-column: 1/4;
+    flex-direction: row;
     min-width: 76rem;
   }
   #underfloor-heating .box-1 {
