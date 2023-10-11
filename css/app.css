@@ -587,6 +587,15 @@ input[type='range']:focus::-ms-fill-upper {
     grid-row: 2/3;
     flex-direction: row;
   }
+  .temp-image {
+    min-width: 76rem;
+  }
+  .ac-panel1 {
+    flex-basis: 50%;
+  }
+  .ac-panel2 {
+    flex-basis: 50%;
+  }
 
   /******** APP PAGE LAYOUT *******/
   .widescreen-grid {
