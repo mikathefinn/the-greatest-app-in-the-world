@@ -540,7 +540,7 @@ input[type='range']:focus::-ms-fill-upper {
     text-align: center;
   }
   #switch-all {
-    grid-row: 3/4;
+    grid-row: 1/2;
     grid-column: 1/4;
     flex-direction: row;
   }
