@@ -16,15 +16,16 @@
         <a href="./contact.html">Contact</a>
       </nav>
     </header>
+    <section class="wrap">
     <div class="registerPage">
       <h1>Register</h1>
-      <form id="registrationForm">
+      <form id="registrationForm" onsubmit="return validateForm();">
         <div class="form-group">
           <label for="username">Username</label>
           <input
             type="text"
             placeholder="username"
-            id="Enter Username"
+            id="username"
             required
           />
         </div>
@@ -50,32 +51,32 @@
             required
           />
         </div>
-        <button class="submitRegister" type="submit">Register</button>
+     
+         <button class="submitRegister" type="submit">Register</button>
       </form>
       <p>Already have an account? <a class="loginLink" href="login.html">Login</a></p>
     </div>
+  </section>
     <script>
-      document.getElementById("registrationForm")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
 
-          var username = document.getElementById("username").value;
-          var email = document.getElementById("email").value;
-          var password = document.getElementById("password").value;
-        });
-       
-        function validatePassword() {
-            var confirmPassword = document.getElementById("confirmPassword").value;
-            if (password.length < 8) {
-                alert("Password must be at least 8 characters long.");
-                return false;
-            }
-            if (password !== confirmPassword) {
-                alert("Passwords do not match.");
-                return false;
-            }
-            return true;
-        }
+    
+  function validateForm() {
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+
+    if (username && email && password && confirmPassword && password === confirmPassword) {
+      // All details are filled in, and passwords match
+      window.location.href = "login.html"; // Redirect to login.html
+      return false;
+    } else {
+      alert("Please fill in all details, and ensure that passwords match.");
+      return false;
+    }
+  }
+
+
     </script>
   </body>
 </html>
