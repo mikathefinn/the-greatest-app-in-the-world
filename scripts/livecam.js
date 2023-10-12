@@ -8,6 +8,28 @@ function filterSelection(c) {
     w3RemoveClass(x[i], "show");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
   }
+  switch (c) {
+    case "all":
+      changeHeadingImage("images/kerrostalo.webp");
+      break;
+    case "living_room":
+      changeHeadingImage("images/living_room.png");
+      break;
+    case "bedroom1":
+      changeHeadingImage("images/bedroom.png");
+      break;
+    case "bedroom2":
+      changeHeadingImage("images/bedroom2.png");
+      break;
+    case "kitchen":
+      changeHeadingImage("images/kitchen.png");
+      break;
+    case "hallway":
+      changeHeadingImage("images/hallway.png");
+      break;
+    default:
+      changeHeadingImage("images/kerrostalo.webp");
+  }
 }
 
 // Show filtered elements
@@ -45,3 +67,33 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
+
+function changeHeadingImage(imageSrc) {
+  const headingImage = document.querySelector(".heading-image");
+  headingImage.src = imageSrc;
+}
+
+function loadFinnishTranslations() {
+  // Load the Finnish translations JSON file
+  fetch("translations-fi.json") // Replace with the actual file path
+    .then((response) => response.json())
+    .then((data) => {
+      // Set the title of the page based on the Finnish translation
+      document.title = data.header.title;
+
+      // Set button labels based on Finnish translations
+      document.querySelector(".btn.all").textContent = data.buttons.all;
+      document.querySelector(".btn.living_room").textContent =
+        data.buttons.living_room;
+      // ...and so on for other elements
+    })
+    .catch((error) => {
+      console.error("Error loading Finnish translations:", error);
+    });
+}
+
+
+
+// Call the function to load Finnish translations when needed
+loadFinnishTranslations();
+

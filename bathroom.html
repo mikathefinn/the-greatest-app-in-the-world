@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script
+      src="https://kit.fontawesome.com/ebfd1f2c4c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Bathroom</title>
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header class="control-header">
+        <i onclick="history.back()" class="fa-solid fa-arrow-left"></i>
+        <h1>Bathroom</h1>
+      </header>
+     
+      <main class="control-main">
+        <img class="heading-image" src="images/bathroom.webp" alt="All">
+        <div id="usage"> 
+          <p>Your current usage is <span id="counter"></span> Watts.</p>
+        </div>
+      
+
+          <section class="rooms">
+
+            <section class="grid-container">
+
+              <div class="grid-item" id="switch-all">
+                <div class="box-1">   
+                 <section class="lights">
+                  <p class="box-title">Ceiling light 1 </p>
+                  <label class="toggle">
+                    <input class="toggle-checkbox" type="checkbox" />
+                    <div class="toggle-slot">
+                      <div class="toggle-text">ON</div>
+                      <div class="toggle-button"></div>
+                    </div>
+                  </label>
+                </section>
+                
+                 <section class="lights">
+                  <p class="box-title">Ceiling light 2 </p>
+                  <label class="toggle">
+                    <input class="toggle-checkbox" type="checkbox" />
+                    <div class="toggle-slot">
+                      <div class="toggle-text">ON</div>
+                      <div class="toggle-button"></div>
+                    </div>
+                  </label>
+                </section>
+                </div>
+  
+                <div class="box-2">
+                  <p class="box-title">Brightness</p>
+                  <input type="range" id="slider" min="0" max="100" />
+                </div>
+              </div>
+
+              <div class="grid-item" id="underfloor-heating">
+                <div class="box-1">   
+                 <section class="lights">
+                  <p class="box-title">Socket 1</p>
+                  <label class="toggle">
+                    <input class="toggle-checkbox" type="checkbox" />
+                    <div class="toggle-slot">
+                      <div class="toggle-text">ON</div>
+                      <div class="toggle-button"></div>
+                    </div>
+                  </label>
+                </section>
+                
+                 <section class="lights">
+                  <p class="box-title">Socket 2 </p>
+                  <label class="toggle">
+                    <input class="toggle-checkbox" type="checkbox" />
+                    <div class="toggle-slot">
+                      <div class="toggle-text">ON</div>
+                      <div class="toggle-button"></div>
+                    </div>
+                  </label>
+                </section>
+                </div>
+  
+                <div class="box-2">
+                  <p class="box-title">Underfloor heating</p>
+                  <input type="range" id="slider" min="0" max="100" />
+                </div>
+              </div>
+
+    
+             
+    
+        
+             
+          </section>
+
+
+ 
+      </main>
+      <footer>
+        <nav class="mobile-bottom-nav">
+          <div class="mobile-bottom-nav__item mobile-bottom-nav__item--active">
+            <div class="mobile-bottom-nav__item-content">
+              <a href="app.html"><i class="fa-solid fa-house style="color: #144eb3;"></i></a>
+            </div>		
+          </div>
+          <div class="mobile-bottom-nav__item">		
+            <div class="mobile-bottom-nav__item-content">
+              <a href="#"><i class="fa-solid fa-user style="color: #144eb3;"></i></a>
+            </div>
+          </div>
+          <div class="mobile-bottom-nav__item">
+            <div class="mobile-bottom-nav__item-content">
+              <a href="contact.html"><i class="fa-solid fa-envelope style="color: #144eb3;"></i></a>
+            </div>		
+          </div>
+          
+          <div class="mobile-bottom-nav__item">
+            <div class="mobile-bottom-nav__item-content">
+              <a href="#"><i class="fa-solid fa-gear style="color: #144eb3;"></i></a>
+            </div>		
+          </div>
+        </nav> 
+      </footer>
+    </div>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>

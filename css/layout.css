@@ -8,7 +8,8 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: #F7F7F7;
+  font-size: 1.6rem;
+  background-color: #f7f7f7;
   background-position: center;
   height: 100%;
 }
@@ -17,7 +18,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- margin: 9rem 0;
+  margin: 9rem 0;
 }
 header {
   color: white;
@@ -30,7 +31,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 10;
- height: 7rem;
+  height: 7rem;
 }
 header nav {
   flex-grow: 1;
@@ -44,13 +45,12 @@ header nav a {
   text-decoration: none;
   font-weight: 600;
   color: white;
- 
 }
 header img {
   max-width: 10rem;
 }
 .main {
-  background:white;
+  background: white;
   color: black;
   border-radius: 10px;
   padding: 30px 40px;
@@ -74,11 +74,11 @@ header img {
   background: transparent;
   outline: none;
   font-size: 16px;
-  color:black;
+  color: black;
   padding-left: 20px;
 }
 .box input::placeholder {
-  color:gray;
+  color: gray;
 }
 .box i {
   position: absolute;
@@ -98,15 +98,19 @@ header img {
   margin-right: 3px;
 }
 .rememberME a {
-  color:black;
+  color: black;
   text-decoration: none;
 }
 .rememberME a:hover {
   text-decoration: underline;
 }
 .main .submit {
-  width: 100%;
-  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 5rem;
+  padding: 1rem;
   background-color: #fff;
   border: 2px solid rgba(225, 225, 225, 1);
   outline: none;
@@ -122,7 +126,7 @@ header img {
   margin: 20px 0 15px;
 }
 .register p a {
-  color:black;
+  color: black;
   text-decoration: none;
   font-weight: 600;
 }
@@ -131,49 +135,48 @@ header img {
 }
 footer {
   text-align: center;
-  background-color:#004d40;
+  background-color: #004d40;
   height: 7vh;
   padding-top: 0.5rem;
-  color:white;
+  color: white;
 }
 /* about us page */
 .aboutUs {
   background-image: none;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   padding: 0.5rem;
-  
 }
 .firstSection figure img,
 .secondSection figure img {
   width: 100%;
   height: auto;
 }
-.firstSection{
+.firstSection {
   position: relative;
   overflow: hidden;
 }
 .firstSection .firstDiv {
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background-color: rgba(225, 225, 225, 0.4);
   padding: 0.2rem 0.5rem;
   width: 80%;
   min-height: 60%;
-  color:black;
-  border:rgba(225, 225, 225, 0.4) solid 1px ;
+  color: black;
+  border: rgba(225, 225, 225, 0.4) solid 1px;
   border-radius: 5px;
   font-size: larger;
 }
-.secondSection .secondDiv .ul{
+.secondSection .secondDiv .ul {
   display: flex;
   flex-grow: row nowrap;
   justify-content: space-between;
   padding: 0.5rem;
   color: black;
 }
-.secondSection .secondDiv .ul ul{
+.secondSection .secondDiv .ul ul {
   list-style-type: none;
   line-height: 2rem;
   font-size: larger;
@@ -183,48 +186,46 @@ footer {
   border-bottom: black solid 1px;
   display: inline-block;
   padding-bottom: 0.3rem;
-  color:black;
+  color: black;
 }
-.firstDiv p{
+.firstDiv p {
   padding-top: 0.5rem;
 }
-@media only screen and (min-width: 426px){
-  .secondSection{
+@media only screen and (min-width: 426px) {
+  .secondSection {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    
   }
-  .secondSection figure{
+  .secondSection figure {
     flex-basis: 50%;
   }
-  .ul{
+  .ul {
     flex-direction: column;
   }
   .firstSection .firstDiv {
-    min-height:30%;
+    min-height: 30%;
   }
 }
-@media only screen and (min-width: 768px){
-  .secondSection{
+@media only screen and (min-width: 768px) {
+  .secondSection {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    
   }
-  .secondSection figure{
+  .secondSection figure {
     flex-basis: 50%;
   }
-  .ul{
-    flex-direction:row;
-    gap:7rem;
+  .ul {
+    flex-direction: row;
+    gap: 7rem;
   }
   .firstSection .firstDiv {
-    min-height:30%;
+    min-height: 30%;
   }
 }
 /*contact us */
-.contactBody{
+.contactBody {
   background-image: none;
 }
 .contact {
@@ -240,34 +241,34 @@ footer {
 
   background-color: #f4f4f4;
 }
-.details{
+.details {
   line-height: 2rem;
 }
 .details h1 {
   padding-bottom: 1rem;
-  border-bottom:black solid 1px;
+  border-bottom: black solid 1px;
   padding-top: 1rem;
   text-align: center;
 }
-.details ul{
+.details ul {
   list-style-type: none;
   padding-top: 1rem;
   text-align: center;
 }
 .container {
-  background-color:#f4f4f4;
+  background-color: #f4f4f4;
   padding: 20px;
   border-radius: 8px;
-  
+
   width: 100%;
-  border: #f5f6f7 solid 5px ;
+  border: #f5f6f7 solid 5px;
 }
-.contactUs{
+.contactUs {
   text-align: center;
-  border: #f5f6f7 solid 5px ;
+  border: #f5f6f7 solid 5px;
   margin-bottom: 10px;
   padding: 1rem;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 form {
   display: grid;
@@ -287,84 +288,71 @@ button {
 button:hover {
   background-color: #0056b3;
 }
-.contactFooter{
+.contactFooter {
   background-color: #fff;
-  color:black;
+  color: black;
 }
-.contactFooter h2{
- 
+.contactFooter h2 {
   display: inline-block;
-  border-bottom:  black solid 1px;
+  border-bottom: black solid 1px;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
-.social-icon a img{
+.social-icon a img {
   display: inline-block;
-  width:20px;
+  width: 20px;
   height: 20px;
 }
-#name {
-  border-color: #cdcdcd;
-  border-radius: 0.5rem;
-}
-#email {
-  border-color: #cdcdcd;
-  border-radius: 0.5rem;
-}
-#message {
-  border-color: #cdcdcd;
-  border-radius: 0.5rem;
-}
-@media only screen and (min-width: 768px){
-  .contact{
+@media only screen and (min-width: 768px) {
+  .contact {
     display: flex;
     flex-direction: row-reverse;
     gap: 1rem;
   }
-  .container{ max-width: 80%;}
-  .details{
-    flex-basis:50%;
+  .container {
+    max-width: 80%;
+  }
+  .details {
+    flex-basis: 50%;
     border-left: black solid 1px;
     padding-left: 1rem;
   }
 }
 /* register page */
-.registerPage{
-  background:white;
+.registerPage {
+  background: white;
   color: black;
   border-radius: 10px;
   padding: 30px 40px;
   display: flex;
   flex-flow: column nowrap;
-  border:solid 1px rgba(247, 244, 244, 0.5) ;
- margin:9rem 0;
+  border: solid 1px rgba(247, 244, 244, 0.5);
+  margin: 9rem 0;
 }
-.registerPage h1{
+.registerPage h1 {
   padding-bottom: 1rem;
 }
-.form-group{
+.form-group {
   display: flex;
   flex-flow: column nowrap;
   gap: 0.5rem;
   width: 100%;
-
 }
-.form-group input{
+.form-group input {
   height: 3rem;
   border: 1px solid rgb(203, 203, 203);
-  border-radius: 1rem
+  border-radius: 0.5rem;
 }
-.submitRegister{
-  font-size:large;
+.submitRegister {
+  font-size: large;
   margin: 1rem 0rem;
   border-radius: 1rem;
 }
-.loginLink{
+.loginLink {
   text-decoration: none;
   font-weight: 600;
   color: black;
 }
-.loginLink:hover{
+.loginLink:hover {
   text-decoration: underline;
 }
-

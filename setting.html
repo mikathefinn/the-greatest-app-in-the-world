@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><span class="lang" id="settingsHeader">Settings</span></h1>
+        </div>
+        
+        <div class="section">
+            <h2><span class="lang" id="accountInfo">Account Information</span></h2>
+            <label for="name"><span class="lang" id="nameLabel">Name</span></label>
+            <input type="text" id="name" value="John Doe">
+            <label for="email"><span class="lang" id="emailLabel">Email</span></label>
+            <input type="email" id="email" value="john.doe@example.com">
+            <label for="password"><span class="lang" id="passwordLabel">Password</span></label>
+            <input type="password" id="password">
+        </div>
+        <div class="section">
+            <h2><span class="lang" id="privacySecurity">Privacy and Security</span></h2>
+            <label for="privacy"><span class="lang" id="privacyLabel">Privacy</span></label>
+            <input type="text" id="privacy" value="high">
+        
+            <h2><span class="lang" id="notificationPrefs">Notification Preferences</span></h2>
+            <label for="notifications"><span class="lang" id="notificationsLabel">Notifications</span></label>
+            <select id="notifications">
+                <option value="off">Off</option>
+                <option value="on">On</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <h2><span class="lang" id="langPrefs">Language Preferences</span></h2>
+            <label for="language"><span class="lang" id="languageLabel">Language</span></label>
+            <select id="language" onchange="changeLanguage()">
+                <option value="en">English</option>
+                <option value="fi">Finnish</option>
+                <option value="sv">Swedish</option>
+            </select>
+        </div>
+
+        <button onclick="saveSettings()"><span class="lang" id="saveButton">Save Changes</span></button>
+    </div>
+
+    <script>
+      
+      function saveSettings() {
+    const privacy = document.getElementById('privacy').value;
+    const notifications = document.getElementById('notifications').value;
+
+    const settings = {
+        privacy: privacy,
+        notifications: notifications
+    };
+
+    const settingsJSON = JSON.stringify(settings);
+    localStorage.setItem('settings', settingsJSON);
+
+    alert("Settings saved!");
+}
+
+           
+        function changeLanguage() {
+            const selectedLanguage = document.getElementById('language').value;
+
+            const languageText = {
+                en: {
+                    settingsHeader: 'Settings',
+                    accountInfo: 'Account Information',
+                    nameLabel: 'Name',
+                    emailLabel: 'Email',
+                    passwordLabel: 'Password',
+                    privacySecurity: 'Privacy and Security',
+                    privacyLabel: 'Privacy',
+                    notificationPrefs: 'Notification Preferences',
+                    notificationsLabel: 'Notifications',
+                    langPrefs: 'Language Preferences',
+                    languageLabel: 'Language',
+                    saveButton: 'Save Changes'
+                },
+                fi: {
+                    settingsHeader: 'Asetukset',
+                    accountInfo: 'Tilin tiedot',
+                    nameLabel: 'Nimi',
+                    emailLabel: 'Sähköposti',
+                    passwordLabel: 'Salasana',
+                    privacySecurity: 'Yksityisyys ja turvallisuus',
+                    privacyLabel: 'Yksityisyys',
+                    notificationPrefs: 'Ilmoitusasetukset',
+                    notificationsLabel: 'Ilmoitukset',
+                    langPrefs: 'Kieliasetukset',
+                    languageLabel: 'Kieli',
+                    saveButton: 'Tallenna muutokset'
+                },
+                sv: {
+                    settingsHeader: 'Inställningar',
+                    accountInfo: 'Kontoinformation',
+                    nameLabel: 'Namn',
+                    emailLabel: 'E-post',
+                    passwordLabel: 'Lösenord',
+                    privacySecurity: 'Integritet och säkerhet',
+                    privacyLabel: 'Integritet',
+                    notificationPrefs: 'Notifieringsinställningar',
+                    notificationsLabel: 'Notifieringar',
+                    langPrefs: 'Språkinställningar',
+                    languageLabel: 'Språk',
+                    saveButton: 'Spara ändringar'
+                }
+            };
+
+            const elementsToUpdate = document.getElementsByClassName('lang');
+
+            for (let i = 0; i < elementsToUpdate.length; i++) {
+                const elementId = elementsToUpdate[i].id;
+                elementsToUpdate[i].textContent = languageText[selectedLanguage][elementId];
+            }
+        }
+    </script>
+</body>
+</html>
+
