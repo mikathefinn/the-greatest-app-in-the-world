@@ -105,8 +105,12 @@ header img {
   text-decoration: underline;
 }
 .main .submit {
-  width: 100%;
-  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 5rem;
+  padding: 1rem;
   background-color: #fff;
   border: 2px solid rgba(225, 225, 225, 1);
   outline: none;
