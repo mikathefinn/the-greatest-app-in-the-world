@@ -1,14 +1,25 @@
-html {
-  font-size: 62.5%;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
+html {
+  font-size: 62.5%;
+}
 body {
+  font-size: 1.6rem;
   background-color: #f7f7f7;
-  background-repeat: no-repeat;
-  height: 100%;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 7rem;
+}
+main img {
   width: 100%;
 }
 header {
@@ -40,103 +51,83 @@ header nav a {
 header img {
   max-width: 10rem;
 }
-.container {
-  margin-top: 7rem;
-}
-.container {
-  width: 100%;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-}
-.container > * {
-  flex-basis: 100%;
-  flex-grow: 1;
-}
 .welcome-text {
-  position: relative;
-  z-index: 1;
   font-size: 1.6rem;
   color: #004d41;
   font-weight: 600;
   margin-top: 4rem;
 }
-.Remo-logo {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
-  margin-top: 4rem;
-}
-.Remo-logo img {
-  max-width: 70%;
+.remo-logo {
+  max-width: 85%;
+  margin-top: 2rem;
 }
 .main-text {
-  margin-top: 8rem;
+  margin-top: 6rem;
   font-size: 1.6rem;
   color: #004d41;
   font-weight: 600;
   font-style: italic;
-  text-align: center;
-}
-.start {
-  margin-top: 8rem;
-  margin-bottom: 11rem;
-  font-size: 1.6rem;
-  font-weight: 600;
-  background-color: rgb(255, 182, 51);
-  border-radius: 12px;
-  color: #004d41;
-  padding: 1.2rem;
+  text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white,
+    1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
 }
 footer {
   text-align: center;
   background-color: #004d40;
   height: 7vh;
-  padding-top: 0.5rem;
   color: white;
-  min-width: 100%;
+  padding-top: 0.5rem;
+}
+.get-started {
+  margin-top: 9rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: rgb(255, 182, 51);
+  border-radius: 12px;
+  color: #004d41;
+  padding: 1rem;
+}
+.content {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.get-started a {
+  text-decoration: none;
+  color: #004d41;
 }
 @media only screen and (min-width: 426px) {
-  .Remo-logo {
-    margin-top: 3rem;
-  }
   .welcome-text {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    margin-top: 5rem;
+  }
+  .remo-logo {
+    max-width: 75%;
   }
   .main-text {
-    font-size: 2.2rem;
-    margin-top: 6rem;
+    font-size: 2rem;
   }
-  .start {
-    font-size: 2.2rem;
-    margin-top: 6rem;
-    margin-bottom: 8rem;
+  .get-started {
+    font-size: 2rem;
     border-radius: 15px;
+    padding: 1.4rem;
   }
 }
 @media only screen and (min-width: 769px) {
-  .Remo-logo {
-    margin-top: 4rem;
-  }
-  .Remo-logo img {
-    max-width: 80%;
-  }
   .welcome-text {
-    font-size: 2.5rem;
-    margin-top: 4rem;
+    font-size: 2.4rem;
+    margin-top: 6rem;
+  }
+  .remo-logo {
+    max-width: 95%;
   }
   .main-text {
-    font-size: 2.5rem;
-    margin-top: 7rem;
+    font-size: 2.4rem;
   }
-  .start {
-    font-size: 2.5rem;
-    border-radius: 15px;
-    margin-top: 7rem;
-    margin-bottom: 10rem;
-    padding: 1.5rem;
+  .get-started {
+    font-size: 2.4rem;
+    border-radius: 18px;
+    padding: 1.8rem;
   }
 }
