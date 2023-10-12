@@ -1,39 +1,28 @@
 html {
   font-size: 62.5%;
-  height: 100%;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7f7f7;
+  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
 }
-.background-image {
-  height: 200%;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 200%;
-  margin: 0 0 -1rem;
-}
-.background-image img {
-  width: 200%;
-  height: 200%;
-}
 header {
-  width: 100%;
   color: white;
-  background-color: #004d41;
-  position: fixed;
-  top: 0;
-  z-index: 10;
+  background-color: #004d40;
+  width: 100%;
   padding-left: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   height: 7rem;
-}
-header img {
-  max-width: 10rem;
 }
 header nav {
   flex-grow: 1;
@@ -48,66 +37,59 @@ header nav a {
   font-weight: 600;
   color: white;
 }
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  position: absolute;
+header img {
+  max-width: 10rem;
 }
-.wrapper > * {
-  flex-grow: 1;
+.container {
+  margin-top: 7rem;
+}
+.container {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.container > * {
   flex-basis: 100%;
+  flex-grow: 1;
+}
+.welcome-text {
+  position: relative;
+  z-index: 1;
+  font-size: 1.6rem;
+  color: #004d41;
+  font-weight: 600;
+  margin-top: 4rem;
 }
 .Remo-logo {
-  margin: 0;
-  position: absolute;
-  top: 30%;
-  left: 100%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  margin-top: 4rem;
 }
 .Remo-logo img {
-  width: 100%;
-  min-height: 251px;
-  min-width: 590px;
+  max-width: 70%;
 }
 .main-text {
-  margin: 0;
-  position: absolute;
-  top: 53%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-  font-size: 2.5rem;
+  margin-top: 8rem;
+  font-size: 1.6rem;
   color: #004d41;
   font-weight: 600;
-  width: 48rem;
   font-style: italic;
-  text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white,
-    1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+  text-align: center;
 }
 .start {
-  font-size: 3rem;
-  margin: 0px;
-  position: absolute;
-  top: 70%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-  width: 23rem;
+  margin-top: 8rem;
+  margin-bottom: 11rem;
+  font-size: 1.6rem;
   font-weight: 600;
-  height: 7rem;
   background-color: rgb(255, 182, 51);
-  border-radius: 15px;
+  border-radius: 12px;
   color: #004d41;
-}
-h1 {
-  margin: 0;
-  position: absolute;
-  top: 15%;
-  left: 100%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: #004d41;
-  font-weight: 600;
-  width: 17rem;
+  padding: 1.2rem;
 }
 footer {
   text-align: center;
@@ -115,5 +97,46 @@ footer {
   height: 7vh;
   padding-top: 0.5rem;
   color: white;
-  width: 200%;
+  min-width: 100%;
+}
+@media only screen and (min-width: 426px) {
+  .Remo-logo {
+    margin-top: 3rem;
+  }
+  .welcome-text {
+    font-size: 2.2rem;
+  }
+  .main-text {
+    font-size: 2.2rem;
+    margin-top: 6rem;
+  }
+  .start {
+    font-size: 2.2rem;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+    border-radius: 15px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .Remo-logo {
+    margin-top: 4rem;
+  }
+  .Remo-logo img {
+    max-width: 80%;
+  }
+  .welcome-text {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+  .main-text {
+    font-size: 2.5rem;
+    margin-top: 7rem;
+  }
+  .start {
+    font-size: 2.5rem;
+    border-radius: 15px;
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+    padding: 1.5rem;
+  }
 }
