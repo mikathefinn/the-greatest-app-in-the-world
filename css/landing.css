@@ -1,39 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 html {
   font-size: 62.5%;
-  height: 100%;
-  margin: 0;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  height: 100%;
+  font-size: 1.6rem;
+  background-color: #f7f7f7;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-top: 7rem;
+}
+main img {
   width: 100%;
-}
-.background-image {
-  height: 200%;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 200%;
-  margin: 0 0 -1rem;
-}
-.background-image img {
-  width: 200%;
-  height: 200%;
 }
 header {
-  width: 100%;
   color: white;
-  background-color: #004d41;
-  position: fixed;
-  top: 0;
-  z-index: 10;
+  background-color: #004d40;
+  width: 100%;
   padding-left: 0.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   height: 7rem;
-}
-header img {
-  max-width: 10rem;
 }
 header nav {
   flex-grow: 1;
@@ -47,6 +47,51 @@ header nav a {
   text-decoration: none;
   font-weight: 600;
   color: white;
+}
+header img {
+  max-width: 10rem;
+}
+.text {
+  background-color: rgba(252, 247, 247, 0.3);
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #004d40;
+  height: 7vh;
+  color: white;
+  padding-top: 1rem;
+}
+.get-start {
+  font-size: 3rem;
+  width: 18rem;
+  font-weight: 600;
+  height: 6rem;
+  background-color: rgb(255, 182, 51);
+  border-radius: 15px;
+  color: #004d41;
+}
+.content {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.get-start a {
+  text-decoration: none;
+  color: #004d41;
+}
+
+/*header img {
+  max-width: 10rem;
+}
+
+.background-image img {
+  width: 100%;
 }
 .wrapper {
   display: flex;
@@ -116,4 +161,4 @@ footer {
   padding-top: 0.5rem;
   color: white;
   width: 200%;
-}
+}*/
