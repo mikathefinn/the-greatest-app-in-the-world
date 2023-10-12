@@ -1,34 +1,23 @@
 html {
   font-size: 62.5%;
+  height: 100%;
+  margin: 0;
 }
 body {
-  font-size: 1.6rem;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgba(32, 31, 31, 0.885);
-  background-color: #f7f7f7;
-  background-position: center;
   height: 100%;
+  width: 100%;
+}
+.background-image {
+  height: 200%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  width: 200%;
+  margin: 0 0 -1rem;
 }
-figure {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10rem;
-}
-figure img {
-  width: 75%;
-  min-height: 251px;
-  min-width: 590px;
-}
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 0 10rem;
+.background-image img {
+  width: 200%;
+  height: 200%;
 }
 header {
   width: 100%;
@@ -54,10 +43,71 @@ header nav {
   justify-content: space-around;
 }
 header nav a {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   text-decoration: none;
   font-weight: 600;
   color: white;
+}
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  position: absolute;
+}
+.wrapper > * {
+  flex-grow: 1;
+  flex-basis: 100%;
+}
+.Remo-logo {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+}
+.Remo-logo img {
+  width: 100%;
+  min-height: 251px;
+  min-width: 590px;
+}
+.main-text {
+  margin: 0;
+  position: absolute;
+  top: 53%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
+  color: #004d41;
+  font-weight: 600;
+  width: 48rem;
+  font-style: italic;
+  text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white,
+    1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+}
+.start {
+  font-size: 3rem;
+  margin: 0px;
+  position: absolute;
+  top: 70%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  width: 23rem;
+  font-weight: 600;
+  height: 7rem;
+  background-color: rgb(255, 182, 51);
+  border-radius: 15px;
+  color: #004d41;
+}
+h1 {
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #004d41;
+  font-weight: 600;
+  width: 17rem;
 }
 footer {
   text-align: center;
@@ -65,4 +115,5 @@ footer {
   height: 7vh;
   padding-top: 0.5rem;
   color: white;
+  width: 200%;
 }
