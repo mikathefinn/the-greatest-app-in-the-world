@@ -10,18 +10,25 @@ html {
 body {
   font-size: 1.6rem;
   background-color: #f7f7f7;
+
 }
 main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: relative;
   margin-top: 7rem;
 }
 main img {
   width: 100%;
 }
+.wrapper {
+  margin-top: -7rem;
+  height: 100%;
+  min-height: 93vh;
+
+}
+
 header {
   color: white;
   background-color: #004d40;
@@ -87,7 +94,7 @@ footer {
   padding: 1rem;
 }
 .content {
-  position: absolute;
+
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

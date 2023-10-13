@@ -1,0 +1,94 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  color: white;
+  background-color: #004d40;
+  width: 100%;
+  padding-left: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  height: 7rem;
+}
+header nav {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+header nav a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+}
+header img {
+  max-width: 10rem;
+}
+main {
+  height: 100%;
+  min-height: calc(100vh - 7.6rem);
+  background-image: url(../images/landing-page-image.jpg);
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 3.2rem;
+  color: #004d41;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+h2 {
+  padding: 0 2rem;
+  margin-top: 3rem;
+  font-size: 2.8rem;
+  color: #004d41;
+  font-weight: 600;
+  font-style: italic;
+  text-shadow: 1px 0 white, -1px 0 white, 0 1px white, 0 -1px white,
+    1px 1px white, -1px -1px white, 1px -1px white, -1px 1px white;
+}
+.getStarted {
+  margin-top: 9rem;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: #004d40;
+  background-color: rgb(255, 182, 51);
+  padding: 2.5rem 3rem;
+  border: solid 1px #004d40;
+  border-radius: 2rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #004d40;
+  color: white;
+}
+footer > p {
+  padding: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  header nav {
+    width: 100%;
+  }
+}
